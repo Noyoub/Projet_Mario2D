@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MARIO 2D: Référence du fichier map.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MARIO 2D
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier map.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ce fichier implémente toutes les fonctions nécessaires à la génération de la map. C'est-à-dire modéliser la map dans une matrice, récupérer ces coordonées aisni que gérer les collisions entre les textures de la map et le sprite du personnage.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="prototypes_8h_source.html">prototypes.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ae4ffa0d30973eaa964a8238fb2b47e98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#ae4ffa0d30973eaa964a8238fb2b47e98">initMaps</a> (int niveau)</td></tr>
+<tr class="memdesc:ae4ffa0d30973eaa964a8238fb2b47e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge les images de fond pour un niveau donné.  <a href="map_8c.html#ae4ffa0d30973eaa964a8238fb2b47e98">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae4ffa0d30973eaa964a8238fb2b47e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac610db9b553925b3fd200b82c6b5d505"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#ac610db9b553925b3fd200b82c6b5d505">getBackground</a> (void)</td></tr>
+<tr class="memdesc:ac610db9b553925b3fd200b82c6b5d505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère la texture background.  <a href="map_8c.html#ac610db9b553925b3fd200b82c6b5d505">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac610db9b553925b3fd200b82c6b5d505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f583cd8124b9c010528e3bd594bbcaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#a5f583cd8124b9c010528e3bd594bbcaf">nettoyageMaps</a> (void)</td></tr>
+<tr class="memdesc:a5f583cd8124b9c010528e3bd594bbcaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nettoie et libère proprement le background et le tileset.  <a href="map_8c.html#a5f583cd8124b9c010528e3bd594bbcaf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5f583cd8124b9c010528e3bd594bbcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc3b57a4ff83cb54f14b42d75e5475d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#aedc3b57a4ff83cb54f14b42d75e5475d">recupValeurTile</a> (int y, int x)</td></tr>
+<tr class="memdesc:aedc3b57a4ff83cb54f14b42d75e5475d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui va retourner la valeur d'une tile.  <a href="map_8c.html#aedc3b57a4ff83cb54f14b42d75e5475d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aedc3b57a4ff83cb54f14b42d75e5475d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab240c41e87676659bb15e27a25dd4bd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#ab240c41e87676659bb15e27a25dd4bd2">chargeMap</a> (char *nom)</td></tr>
+<tr class="memdesc:ab240c41e87676659bb15e27a25dd4bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lis le fichier texte et stocke la map dans des matrices pour pouvoir réutiliser facilement les coordonnées ensuite.  <a href="map_8c.html#ab240c41e87676659bb15e27a25dd4bd2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab240c41e87676659bb15e27a25dd4bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4cf0f3db3ba2199653fa0d7f203a108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#af4cf0f3db3ba2199653fa0d7f203a108">dessineMap</a> (int couche)</td></tr>
+<tr class="memdesc:af4cf0f3db3ba2199653fa0d7f203a108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine la map sur un rendu en récupérant les coordonnées de la matrice pour une couche donnée.  <a href="map_8c.html#af4cf0f3db3ba2199653fa0d7f203a108">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af4cf0f3db3ba2199653fa0d7f203a108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7119f3953730414181d710d2b4590ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#ab7119f3953730414181d710d2b4590ac">chargeNiveau</a> (int niveau)</td></tr>
+<tr class="memdesc:ab7119f3953730414181d710d2b4590ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge une nouvelle map en nettoyant la mémoire qui est occupée à ce moment précis.  <a href="map_8c.html#ab7119f3953730414181d710d2b4590ac">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab7119f3953730414181d710d2b4590ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffccd83f070982a23a8eeb90872b71d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#afffccd83f070982a23a8eeb90872b71d">recupPersoStartX</a> (void)</td></tr>
+<tr class="memdesc:afffccd83f070982a23a8eeb90872b71d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère les coordonnées de départ en abscisse du personnage.  <a href="map_8c.html#afffccd83f070982a23a8eeb90872b71d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afffccd83f070982a23a8eeb90872b71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4fbf028717ec7ea28d970c23e041b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#a7b4fbf028717ec7ea28d970c23e041b3">initDepartMapX</a> (int valeur)</td></tr>
+<tr class="memdesc:a7b4fbf028717ec7ea28d970c23e041b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise les coordonnées de départ en abscisse sur la map.  <a href="map_8c.html#a7b4fbf028717ec7ea28d970c23e041b3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7b4fbf028717ec7ea28d970c23e041b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae834cb64ed45186570ea08e068cb9a95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#ae834cb64ed45186570ea08e068cb9a95">recupPersoStartY</a> (void)</td></tr>
+<tr class="memdesc:ae834cb64ed45186570ea08e068cb9a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère les coordonnées de départ en ordonnée du personnage.  <a href="map_8c.html#ae834cb64ed45186570ea08e068cb9a95">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae834cb64ed45186570ea08e068cb9a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee09450cf06b3a228f85a7a616387174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#aee09450cf06b3a228f85a7a616387174">initDepartMapY</a> (int valeur)</td></tr>
+<tr class="memdesc:aee09450cf06b3a228f85a7a616387174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise les coordonnées de départ en ordonnée sur la map.  <a href="map_8c.html#aee09450cf06b3a228f85a7a616387174">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aee09450cf06b3a228f85a7a616387174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77db6bc8ad01965056aa9398af4ef2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#ad77db6bc8ad01965056aa9398af4ef2e">recupFinMapX</a> (void)</td></tr>
+<tr class="memdesc:ad77db6bc8ad01965056aa9398af4ef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère les coordonnées en abscisse de la fin de la map.  <a href="map_8c.html#ad77db6bc8ad01965056aa9398af4ef2e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad77db6bc8ad01965056aa9398af4ef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b720fcd2523ffd234ab46e437fe67f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#a8b720fcd2523ffd234ab46e437fe67f4">recupFinMapY</a> (void)</td></tr>
+<tr class="memdesc:a8b720fcd2523ffd234ab46e437fe67f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère les coordonnées en ordonnée de la fin de la map.  <a href="map_8c.html#a8b720fcd2523ffd234ab46e437fe67f4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8b720fcd2523ffd234ab46e437fe67f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54593d69c7671b93c93cd2b9f1415db6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#a54593d69c7671b93c93cd2b9f1415db6">recupDebutMapX</a> (void)</td></tr>
+<tr class="memdesc:a54593d69c7671b93c93cd2b9f1415db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère les coordonnées en abscisse du début de la map.  <a href="map_8c.html#a54593d69c7671b93c93cd2b9f1415db6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a54593d69c7671b93c93cd2b9f1415db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b929f89ce8eefb984575c1688cfade4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#a5b929f89ce8eefb984575c1688cfade4">recupDebutMapY</a> (void)</td></tr>
+<tr class="memdesc:a5b929f89ce8eefb984575c1688cfade4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère les coordonnées en ordonnée du début de la map.  <a href="map_8c.html#a5b929f89ce8eefb984575c1688cfade4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5b929f89ce8eefb984575c1688cfade4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66dd606c759538b621a2361591d4b8c5"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#a66dd606c759538b621a2361591d4b8c5">recupTileset</a> (void)</td></tr>
+<tr class="memdesc:a66dd606c759538b621a2361591d4b8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère le tileSet.  <a href="map_8c.html#a66dd606c759538b621a2361591d4b8c5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a66dd606c759538b621a2361591d4b8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ec4c6237bd0bd376e15de06a9c4fb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#a02ec4c6237bd0bd376e15de06a9c4fb2">mapCollision</a> (<a class="el" href="struct_personnage.html">Personnage</a> *entite)</td></tr>
+<tr class="memdesc:a02ec4c6237bd0bd376e15de06a9c4fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère les collisions avec les différentes textures de la map.  <a href="map_8c.html#a02ec4c6237bd0bd376e15de06a9c4fb2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a02ec4c6237bd0bd376e15de06a9c4fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67bc01386fa32d5341532b6e8e1e1d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8c.html#a67bc01386fa32d5341532b6e8e1e1d2f">collision_map_monstre</a> (<a class="el" href="struct_personnage.html">Personnage</a> *entite)</td></tr>
+<tr class="memdesc:a67bc01386fa32d5341532b6e8e1e1d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui va gérer les collisions entre le monstre et la map.  <a href="map_8c.html#a67bc01386fa32d5341532b6e8e1e1d2f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a67bc01386fa32d5341532b6e8e1e1d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac9becb8e2f80125547c8cc8f9d56b7ab"><td class="memItemLeft" align="right" valign="top"><a id="ac9becb8e2f80125547c8cc8f9d56b7ab"></a>
+<a class="el" href="struct_map.html">Map</a>&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
+<tr class="separator:ac9becb8e2f80125547c8cc8f9d56b7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7e2faaefcada5e1fa2e88d1de46832"><td class="memItemLeft" align="right" valign="top"><a id="aaa7e2faaefcada5e1fa2e88d1de46832"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>record</b></td></tr>
+<tr class="separator:aaa7e2faaefcada5e1fa2e88d1de46832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616b2737a3231a7b4a991d195e194a11"><td class="memItemLeft" align="right" valign="top"><a id="a616b2737a3231a7b4a991d195e194a11"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>record_battu</b> = 0</td></tr>
+<tr class="separator:a616b2737a3231a7b4a991d195e194a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c6087027bfdf561a2b766975b47ee8"><td class="memItemLeft" align="right" valign="top"><a id="ae2c6087027bfdf561a2b766975b47ee8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>timer</b></td></tr>
+<tr class="separator:ae2c6087027bfdf561a2b766975b47ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81506c7c67dbc00c7fa51bc211a1c648"><td class="memItemLeft" align="right" valign="top"><a id="a81506c7c67dbc00c7fa51bc211a1c648"></a>
+SDL_bool&#160;</td><td class="memItemRight" valign="bottom"><b>volume</b></td></tr>
+<tr class="separator:a81506c7c67dbc00c7fa51bc211a1c648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd62503666dc50bc0f45ecf0db483cc"><td class="memItemLeft" align="right" valign="top"><a id="a6bd62503666dc50bc0f45ecf0db483cc"></a>
+FILE *&#160;</td><td class="memItemRight" valign="bottom"><b>fich</b> = NULL</td></tr>
+<tr class="separator:a6bd62503666dc50bc0f45ecf0db483cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ce fichier implémente toutes les fonctions nécessaires à la génération de la map. C'est-à-dire modéliser la map dans une matrice, récupérer ces coordonées aisni que gérer les collisions entre les textures de la map et le sprite du personnage. </p>
+<dl class="section version"><dt>Version</dt><dd>1.7 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON </dd></dl>
+<dl class="section date"><dt>Date</dt><dd></dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ab240c41e87676659bb15e27a25dd4bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab240c41e87676659bb15e27a25dd4bd2">&#9670;&nbsp;</a></span>chargeMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chargeMap </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lis le fichier texte et stocke la map dans des matrices pour pouvoir réutiliser facilement les coordonnées ensuite. </p>
+<p>param[in] char *nom Nom de la map à modéliser</p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ab7119f3953730414181d710d2b4590ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7119f3953730414181d710d2b4590ac">&#9670;&nbsp;</a></span>chargeNiveau()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chargeNiveau </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>niveau</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge une nouvelle map en nettoyant la mémoire qui est occupée à ce moment précis. </p>
+<p>param[in] int niveau niveau choisi</p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a67bc01386fa32d5341532b6e8e1e1d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67bc01386fa32d5341532b6e8e1e1d2f">&#9670;&nbsp;</a></span>collision_map_monstre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void collision_map_monstre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_personnage.html">Personnage</a> *&#160;</td>
+          <td class="paramname"><em>monstre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui va gérer les collisions entre le monstre et la map. </p>
+<p>param[in] <a class="el" href="struct_personnage.html">Personnage</a> *monstre objet monstre</p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="af4cf0f3db3ba2199653fa0d7f203a108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4cf0f3db3ba2199653fa0d7f203a108">&#9670;&nbsp;</a></span>dessineMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dessineMap </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>couche</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine la map sur un rendu en récupérant les coordonnées de la matrice pour une couche donnée. </p>
+<p>param[in] int couche Nom de la couche à modéliser</p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ac610db9b553925b3fd200b82c6b5d505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac610db9b553925b3fd200b82c6b5d505">&#9670;&nbsp;</a></span>getBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* getBackground </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère la texture background. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>SDL_Texture </dd></dl>
+
+</div>
+</div>
+<a id="a7b4fbf028717ec7ea28d970c23e041b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4fbf028717ec7ea28d970c23e041b3">&#9670;&nbsp;</a></span>initDepartMapX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initDepartMapX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise les coordonnées de départ en abscisse sur la map. </p>
+<p>param[in] int valeur Valeur de la coordonnée</p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aee09450cf06b3a228f85a7a616387174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee09450cf06b3a228f85a7a616387174">&#9670;&nbsp;</a></span>initDepartMapY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initDepartMapY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise les coordonnées de départ en ordonnée sur la map. </p>
+<p>param[in] int valeur Valeur de la coordonnée</p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ae4ffa0d30973eaa964a8238fb2b47e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ffa0d30973eaa964a8238fb2b47e98">&#9670;&nbsp;</a></span>initMaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initMaps </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>niveau</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge les images de fond pour un niveau donné. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>niveau entier lié à un niveau (1, 2, 3 etc...)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a02ec4c6237bd0bd376e15de06a9c4fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02ec4c6237bd0bd376e15de06a9c4fb2">&#9670;&nbsp;</a></span>mapCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mapCollision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_personnage.html">Personnage</a> *&#160;</td>
+          <td class="paramname"><em>personnage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gère les collisions avec les différentes textures de la map. </p>
+<p>param[in] <a class="el" href="struct_personnage.html">Personnage</a> *personnage un personnage (texture animée)</p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a5f583cd8124b9c010528e3bd594bbcaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f583cd8124b9c010528e3bd594bbcaf">&#9670;&nbsp;</a></span>nettoyageMaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nettoyageMaps </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nettoie et libère proprement le background et le tileset. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a54593d69c7671b93c93cd2b9f1415db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54593d69c7671b93c93cd2b9f1415db6">&#9670;&nbsp;</a></span>recupDebutMapX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recupDebutMapX </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère les coordonnées en abscisse du début de la map. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a5b929f89ce8eefb984575c1688cfade4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b929f89ce8eefb984575c1688cfade4">&#9670;&nbsp;</a></span>recupDebutMapY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recupDebutMapY </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère les coordonnées en ordonnée du début de la map. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="ad77db6bc8ad01965056aa9398af4ef2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77db6bc8ad01965056aa9398af4ef2e">&#9670;&nbsp;</a></span>recupFinMapX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recupFinMapX </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère les coordonnées en abscisse de la fin de la map. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a8b720fcd2523ffd234ab46e437fe67f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b720fcd2523ffd234ab46e437fe67f4">&#9670;&nbsp;</a></span>recupFinMapY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recupFinMapY </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère les coordonnées en ordonnée de la fin de la map. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="afffccd83f070982a23a8eeb90872b71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afffccd83f070982a23a8eeb90872b71d">&#9670;&nbsp;</a></span>recupPersoStartX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recupPersoStartX </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère les coordonnées de départ en abscisse du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="ae834cb64ed45186570ea08e068cb9a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae834cb64ed45186570ea08e068cb9a95">&#9670;&nbsp;</a></span>recupPersoStartY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recupPersoStartY </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère les coordonnées de départ en ordonnée du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a66dd606c759538b621a2361591d4b8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66dd606c759538b621a2361591d4b8c5">&#9670;&nbsp;</a></span>recupTileset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* recupTileset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère le tileSet. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>SDL_Texture </dd></dl>
+
+</div>
+</div>
+<a id="aedc3b57a4ff83cb54f14b42d75e5475d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc3b57a4ff83cb54f14b42d75e5475d">&#9670;&nbsp;</a></span>recupValeurTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recupValeurTile </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui va retourner la valeur d'une tile. </p>
+<p>param[in] int x coordonnée x param[in] int y coordonnée y</p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

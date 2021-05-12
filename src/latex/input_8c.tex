@@ -1,0 +1,64 @@
+\hypertarget{input_8c}{}\doxysection{Référence du fichier input.\+c}
+\label{input_8c}\index{input.c@{input.c}}
+
+
+S\textquotesingle{}occupe de gérer les évènements des touches du clavier.  
+
+
+{\ttfamily \#include \char`\"{}prototypes.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{input_8c_adf1d8984fda4ff8744c8225cc304b538}{gestion\+Touches}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Appelle la fonction \mbox{\hyperlink{prototypes_8h_a8151adaa507a8c5b649f583f00bf61fd}{recup\+Touche()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{input_8c_a8151adaa507a8c5b649f583f00bf61fd}{recup\+Touche}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer les touches du clavier, c\textquotesingle{}est-\/à-\/dire qu\textquotesingle{}elle va boucler sur chaque évènement qui pourra être traité par le jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+S\textquotesingle{}occupe de gérer les évènements des touches du clavier. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{input_8c_adf1d8984fda4ff8744c8225cc304b538}\label{input_8c_adf1d8984fda4ff8744c8225cc304b538}} 
+\index{input.c@{input.c}!gestionTouches@{gestionTouches}}
+\index{gestionTouches@{gestionTouches}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{gestionTouches()}{gestionTouches()}}
+{\footnotesize\ttfamily void gestion\+Touches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Appelle la fonction \mbox{\hyperlink{prototypes_8h_a8151adaa507a8c5b649f583f00bf61fd}{recup\+Touche()}} 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche Une entrée ~\newline
+
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_a8151adaa507a8c5b649f583f00bf61fd}\label{input_8c_a8151adaa507a8c5b649f583f00bf61fd}} 
+\index{input.c@{input.c}!recupTouche@{recupTouche}}
+\index{recupTouche@{recupTouche}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{recupTouche()}{recupTouche()}}
+{\footnotesize\ttfamily void recup\+Touche (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer les touches du clavier, c\textquotesingle{}est-\/à-\/dire qu\textquotesingle{}elle va boucler sur chaque évènement qui pourra être traité par le jeu. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche une entrée ~\newline
+
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}

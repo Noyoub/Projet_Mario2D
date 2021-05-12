@@ -1,0 +1,373 @@
+\hypertarget{joueur_8c}{}\doxysection{Référence du fichier joueur.\+c}
+\label{joueur_8c}\index{joueur.c@{joueur.c}}
+
+
+Ce fichier implémente toutes les fonctions nécessaires à la gestion des évènements liés au personnage.  
+
+
+{\ttfamily \#include \char`\"{}prototypes.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$ \mbox{\hyperlink{joueur_8c_abbc2423b650bd151a25c46d256f2ba0a}{recup\+Joueur}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère le \mbox{\hyperlink{struct_personnage}{Personnage}} de player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{joueur_8c_a66ecbd7cd424068e192bf660ca7577a8}{recup\+JoueurX}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en abscisse du héros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{joueur_8c_afee5fe560bf506918ee1bab46d6f1d02}{recup\+JoueurY}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en ordonnée du héros. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_ad929f8ccf334a1f20769da83d12f90f8}{init\+JoueurX}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées en abscisse du héros. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_aab01456feb2e384c6ec1c2de1bb24af0}{init\+JoueurY}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées en ordonnée du héros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{joueur_8c_a022a27f356efe8beb481560a2a7fcdc0}{recup\+Niveau}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}entier lié au level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{joueur_8c_a974cbb87bcf524e2c1b9dab6f3849a33}{recup\+Nombre\+De\+Vies}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère le nombre de vie(s) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a88157b320cc069facb592880887a6e46}{init\+Nombre\+De\+Vies}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Défini le nombre de vie(s) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{joueur_8c_aacca3f18ff5cab2ab676b4788e04a8ea}{recup\+Nombre\+De\+Pieces}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère le nombre de pièce(s) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a3f77726f9f9d5270145d3f198902fcb0}{init\+Nombre\+De\+Pieces}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise le nombre de piece(s) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a91d70a5caec7a2c705f54f08646df552}{change\+Niveau}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Change la valeur du niveau en cours. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a1f95054bbfda886cb58c81fff2c547ae}{init\+Sprite\+Joueur}} (int hero)
+\begin{DoxyCompactList}\small\item\em Charge le spritesheet du héros au début du level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a35cfdf41ae032f5f1532961c2880faa3}{reset\+Checkpoint}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui remet le checkpoint du joueur à 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a3e1f2fd7f6d738f1b6dbe36243f8ced1}{nettoyage\+Joueur}} (void)
+\begin{DoxyCompactList}\small\item\em Vide la mémoire liée au sprite proprement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a0788ca06a161bf4ca20d44b2378ad846}{tuer\+Joueur}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer la mort du héro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a1f82ff6c274b947b154a1c67a13f8b13}{init\+Joueur}} (int nouveau\+Niveau)
+\begin{DoxyCompactList}\small\item\em Initialise le héros dans un niveau donné \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_abd7f639e120c78780a1046b61e98f28e}{dessine\+Joueur}} (void)
+\begin{DoxyCompactList}\small\item\em Dessine le héros aux coordonnées récupérées dans la fonction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_ae704c00c46f7dbf74de149aa27d2ebc5}{maj\+Joueur}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui met à jour les coordonnées du personnage en fonction de la touche entrée par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a1694e8d0d1811f31bdd8243f13c5fc69}{scroll\+Sur\+Joueur}} (void)
+\begin{DoxyCompactList}\small\item\em Gestion du scrolling de la map, centré sur le héros, et adapté à la vitesse de ce dernier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a60c0d690e3b3a64e741ceb5c860edd78}{recup\+Item}} (int item\+Number)
+\begin{DoxyCompactList}\small\item\em Met à jour les compteurs de pièces et de vies en fonction des power-\/up (tiles spéciales) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{joueur_8c_a01662fc98c8f04492826890e0b34bd72}\label{joueur_8c_a01662fc98c8f04492826890e0b34bd72}} 
+int {\bfseries niveau}
+\item 
+\mbox{\Hypertarget{joueur_8c_a7a0ba9e8c59a789d927afb3d70583403}\label{joueur_8c_a7a0ba9e8c59a789d927afb3d70583403}} 
+int {\bfseries vies}
+\item 
+\mbox{\Hypertarget{joueur_8c_a19e07e13a35f4d97764ce08e2a3c6e7b}\label{joueur_8c_a19e07e13a35f4d97764ce08e2a3c6e7b}} 
+int {\bfseries pieces}
+\item 
+\mbox{\Hypertarget{joueur_8c_a1cde05803a03d9bd68525986c9eac616}\label{joueur_8c_a1cde05803a03d9bd68525986c9eac616}} 
+int {\bfseries total\+Pieces} = 0
+\item 
+\mbox{\Hypertarget{joueur_8c_a770f2d08abdb69279875e03b3aeda047}\label{joueur_8c_a770f2d08abdb69279875e03b3aeda047}} 
+int {\bfseries total\+Morts} = 0
+\item 
+\mbox{\Hypertarget{joueur_8c_a81506c7c67dbc00c7fa51bc211a1c648}\label{joueur_8c_a81506c7c67dbc00c7fa51bc211a1c648}} 
+SDL\+\_\+bool {\bfseries volume}
+\item 
+\mbox{\Hypertarget{joueur_8c_ac57f17dbb02609c1eb8c439af852c7ca}\label{joueur_8c_ac57f17dbb02609c1eb8c439af852c7ca}} 
+\mbox{\hyperlink{struct_personnage}{Personnage}} {\bfseries joueur}
+\item 
+\mbox{\Hypertarget{joueur_8c_a658a25fc2e0d1300a2c3f0084a32f6e1}\label{joueur_8c_a658a25fc2e0d1300a2c3f0084a32f6e1}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries joueur\+Sprite\+Sheet}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ce fichier implémente toutes les fonctions nécessaires à la gestion des évènements liés au personnage. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{joueur_8c_a91d70a5caec7a2c705f54f08646df552}\label{joueur_8c_a91d70a5caec7a2c705f54f08646df552}} 
+\index{joueur.c@{joueur.c}!changeNiveau@{changeNiveau}}
+\index{changeNiveau@{changeNiveau}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{changeNiveau()}{changeNiveau()}}
+{\footnotesize\ttfamily void change\+Niveau (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Change la valeur du niveau en cours. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur du niveau
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_abd7f639e120c78780a1046b61e98f28e}\label{joueur_8c_abd7f639e120c78780a1046b61e98f28e}} 
+\index{joueur.c@{joueur.c}!dessineJoueur@{dessineJoueur}}
+\index{dessineJoueur@{dessineJoueur}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{dessineJoueur()}{dessineJoueur()}}
+{\footnotesize\ttfamily void dessine\+Joueur (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Dessine le héros aux coordonnées récupérées dans la fonction. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a1f82ff6c274b947b154a1c67a13f8b13}\label{joueur_8c_a1f82ff6c274b947b154a1c67a13f8b13}} 
+\index{joueur.c@{joueur.c}!initJoueur@{initJoueur}}
+\index{initJoueur@{initJoueur}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{initJoueur()}{initJoueur()}}
+{\footnotesize\ttfamily void init\+Joueur (\begin{DoxyParamCaption}\item[{int}]{nouveau\+Niveau }\end{DoxyParamCaption})}
+
+
+
+Initialise le héros dans un niveau donné 
+
+param\mbox{[}in\mbox{]} int nouveau\+Niveau Valeur du niveau dans laquelle il faut charger le héros
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_ad929f8ccf334a1f20769da83d12f90f8}\label{joueur_8c_ad929f8ccf334a1f20769da83d12f90f8}} 
+\index{joueur.c@{joueur.c}!initJoueurX@{initJoueurX}}
+\index{initJoueurX@{initJoueurX}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{initJoueurX()}{initJoueurX()}}
+{\footnotesize\ttfamily void init\+JoueurX (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise les coordonnées en abscisse du héros. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur x
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_aab01456feb2e384c6ec1c2de1bb24af0}\label{joueur_8c_aab01456feb2e384c6ec1c2de1bb24af0}} 
+\index{joueur.c@{joueur.c}!initJoueurY@{initJoueurY}}
+\index{initJoueurY@{initJoueurY}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{initJoueurY()}{initJoueurY()}}
+{\footnotesize\ttfamily void init\+JoueurY (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise les coordonnées en ordonnée du héros. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur y
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a3f77726f9f9d5270145d3f198902fcb0}\label{joueur_8c_a3f77726f9f9d5270145d3f198902fcb0}} 
+\index{joueur.c@{joueur.c}!initNombreDePieces@{initNombreDePieces}}
+\index{initNombreDePieces@{initNombreDePieces}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{initNombreDePieces()}{initNombreDePieces()}}
+{\footnotesize\ttfamily void init\+Nombre\+De\+Pieces (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise le nombre de piece(s) 
+
+param\mbox{[}in\mbox{]} int valeur Nombre de pièce(s)
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a88157b320cc069facb592880887a6e46}\label{joueur_8c_a88157b320cc069facb592880887a6e46}} 
+\index{joueur.c@{joueur.c}!initNombreDeVies@{initNombreDeVies}}
+\index{initNombreDeVies@{initNombreDeVies}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{initNombreDeVies()}{initNombreDeVies()}}
+{\footnotesize\ttfamily void init\+Nombre\+De\+Vies (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Défini le nombre de vie(s) 
+
+param\mbox{[}in\mbox{]} int valeur Nombre de vie(s)
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a1f95054bbfda886cb58c81fff2c547ae}\label{joueur_8c_a1f95054bbfda886cb58c81fff2c547ae}} 
+\index{joueur.c@{joueur.c}!initSpriteJoueur@{initSpriteJoueur}}
+\index{initSpriteJoueur@{initSpriteJoueur}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{initSpriteJoueur()}{initSpriteJoueur()}}
+{\footnotesize\ttfamily void init\+Sprite\+Joueur (\begin{DoxyParamCaption}\item[{int}]{hero }\end{DoxyParamCaption})}
+
+
+
+Charge le spritesheet du héros au début du level. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_ae704c00c46f7dbf74de149aa27d2ebc5}\label{joueur_8c_ae704c00c46f7dbf74de149aa27d2ebc5}} 
+\index{joueur.c@{joueur.c}!majJoueur@{majJoueur}}
+\index{majJoueur@{majJoueur}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{majJoueur()}{majJoueur()}}
+{\footnotesize\ttfamily void maj\+Joueur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui met à jour les coordonnées du personnage en fonction de la touche entrée par l\textquotesingle{}utilisateur. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche Touche entrée par l\textquotesingle{}utilisateur
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a3e1f2fd7f6d738f1b6dbe36243f8ced1}\label{joueur_8c_a3e1f2fd7f6d738f1b6dbe36243f8ced1}} 
+\index{joueur.c@{joueur.c}!nettoyageJoueur@{nettoyageJoueur}}
+\index{nettoyageJoueur@{nettoyageJoueur}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{nettoyageJoueur()}{nettoyageJoueur()}}
+{\footnotesize\ttfamily void nettoyage\+Joueur (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Vide la mémoire liée au sprite proprement. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a60c0d690e3b3a64e741ceb5c860edd78}\label{joueur_8c_a60c0d690e3b3a64e741ceb5c860edd78}} 
+\index{joueur.c@{joueur.c}!recupItem@{recupItem}}
+\index{recupItem@{recupItem}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{recupItem()}{recupItem()}}
+{\footnotesize\ttfamily void recup\+Item (\begin{DoxyParamCaption}\item[{int}]{item\+Number }\end{DoxyParamCaption})}
+
+
+
+Met à jour les compteurs de pièces et de vies en fonction des power-\/up (tiles spéciales) 
+
+param\mbox{[}in\mbox{]} int item\+Number Valeur de l\textquotesingle{}item
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_abbc2423b650bd151a25c46d256f2ba0a}\label{joueur_8c_abbc2423b650bd151a25c46d256f2ba0a}} 
+\index{joueur.c@{joueur.c}!recupJoueur@{recupJoueur}}
+\index{recupJoueur@{recupJoueur}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{recupJoueur()}{recupJoueur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_personnage}{Personnage}}$\ast$ recup\+Joueur (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère le \mbox{\hyperlink{struct_personnage}{Personnage}} de player. 
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_personnage}{Personnage}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a66ecbd7cd424068e192bf660ca7577a8}\label{joueur_8c_a66ecbd7cd424068e192bf660ca7577a8}} 
+\index{joueur.c@{joueur.c}!recupJoueurX@{recupJoueurX}}
+\index{recupJoueurX@{recupJoueurX}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{recupJoueurX()}{recupJoueurX()}}
+{\footnotesize\ttfamily int recup\+JoueurX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en abscisse du héros. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_afee5fe560bf506918ee1bab46d6f1d02}\label{joueur_8c_afee5fe560bf506918ee1bab46d6f1d02}} 
+\index{joueur.c@{joueur.c}!recupJoueurY@{recupJoueurY}}
+\index{recupJoueurY@{recupJoueurY}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{recupJoueurY()}{recupJoueurY()}}
+{\footnotesize\ttfamily int recup\+JoueurY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en ordonnée du héros. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a022a27f356efe8beb481560a2a7fcdc0}\label{joueur_8c_a022a27f356efe8beb481560a2a7fcdc0}} 
+\index{joueur.c@{joueur.c}!recupNiveau@{recupNiveau}}
+\index{recupNiveau@{recupNiveau}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{recupNiveau()}{recupNiveau()}}
+{\footnotesize\ttfamily int recup\+Niveau (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère l\textquotesingle{}entier lié au level. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_aacca3f18ff5cab2ab676b4788e04a8ea}\label{joueur_8c_aacca3f18ff5cab2ab676b4788e04a8ea}} 
+\index{joueur.c@{joueur.c}!recupNombreDePieces@{recupNombreDePieces}}
+\index{recupNombreDePieces@{recupNombreDePieces}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{recupNombreDePieces()}{recupNombreDePieces()}}
+{\footnotesize\ttfamily int recup\+Nombre\+De\+Pieces (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère le nombre de pièce(s) 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a974cbb87bcf524e2c1b9dab6f3849a33}\label{joueur_8c_a974cbb87bcf524e2c1b9dab6f3849a33}} 
+\index{joueur.c@{joueur.c}!recupNombreDeVies@{recupNombreDeVies}}
+\index{recupNombreDeVies@{recupNombreDeVies}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{recupNombreDeVies()}{recupNombreDeVies()}}
+{\footnotesize\ttfamily int recup\+Nombre\+De\+Vies (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère le nombre de vie(s) 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a35cfdf41ae032f5f1532961c2880faa3}\label{joueur_8c_a35cfdf41ae032f5f1532961c2880faa3}} 
+\index{joueur.c@{joueur.c}!resetCheckpoint@{resetCheckpoint}}
+\index{resetCheckpoint@{resetCheckpoint}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{resetCheckpoint()}{resetCheckpoint()}}
+{\footnotesize\ttfamily void reset\+Checkpoint (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remet le checkpoint du joueur à 0. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a1694e8d0d1811f31bdd8243f13c5fc69}\label{joueur_8c_a1694e8d0d1811f31bdd8243f13c5fc69}} 
+\index{joueur.c@{joueur.c}!scrollSurJoueur@{scrollSurJoueur}}
+\index{scrollSurJoueur@{scrollSurJoueur}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{scrollSurJoueur()}{scrollSurJoueur()}}
+{\footnotesize\ttfamily void scroll\+Sur\+Joueur (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du scrolling de la map, centré sur le héros, et adapté à la vitesse de ce dernier. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur x
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{joueur_8c_a0788ca06a161bf4ca20d44b2378ad846}\label{joueur_8c_a0788ca06a161bf4ca20d44b2378ad846}} 
+\index{joueur.c@{joueur.c}!tuerJoueur@{tuerJoueur}}
+\index{tuerJoueur@{tuerJoueur}!joueur.c@{joueur.c}}
+\doxysubsubsection{\texorpdfstring{tuerJoueur()}{tuerJoueur()}}
+{\footnotesize\ttfamily void tuer\+Joueur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer la mort du héro. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}

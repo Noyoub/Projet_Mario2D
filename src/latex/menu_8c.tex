@@ -1,0 +1,311 @@
+\hypertarget{menu_8c}{}\doxysection{Référence du fichier menu.\+c}
+\label{menu_8c}\index{menu.c@{menu.c}}
+
+
+S\textquotesingle{}occupe des fonctions relatives à l\textquotesingle{}affichage et à la mise à jour des menus.  
+
+
+{\ttfamily \#include \char`\"{}prototypes.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{menu_8c_a3c2426d31fad5d72096cd8610bc2b3af}{recup\+Statut\+Menu}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui renvoi 0 si on est en jeu et 1 si on est dans un menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{menu_8c_aea8c06b46bf819121d301be6f73b9e75}{recup\+Type\+Menu}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui renvoi le type de menu actuel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_ab64dbeb7003ac501878862143e8f6a14}{init\+Type\+Menu}} (int valeur, int type)
+\begin{DoxyCompactList}\small\item\em Fonction qui définit si on est dans un menu et quel type de menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_aeb312566d0f594e6772d6e92049f5069}{init\+Menus}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui charge l\textquotesingle{}image du menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_ae8934389b8c49582a7b8776295332f68}{libere\+Menus}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui libère l\textquotesingle{}image du menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_a6ae3badf360d2d2148cfc970c479049c}{maj\+Menu\+Principal}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les évênements du menu start. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_a7481c7d77e20e8e8284ab51da8c0440e}{maj\+Menu\+Fin}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les évênements du menu de fin de partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_a47c278cbb5995ba5ba939cbffc25be36}{maj\+Menu\+Gameover}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les évênements du menu gameover. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_a68e7bf49653633671d2a842ac0cd7db3}{maj\+Menu\+Pause}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les évênements du menu pause. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_ae44974e279fcd2f25ffabf75dd97334e}{dessine\+Menu\+Principal}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le menu start à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_a13795b191929e9b34e58e655447fd651}{dessine\+Menu\+Fin}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le menu de fin de partie à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_ac6b8260c5ba63b8330b55429b8f6ab82}{dessine\+Menu\+Gameover}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le menu de gameover. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8c_a7435cf2ca6682bdbd3f37e656723b0f6}{dessine\+Menu\+Pause}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le menu pause à l\textquotesingle{}écran. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{menu_8c_a641074a87a3bbf2f542bfaf0133a4d37}\label{menu_8c_a641074a87a3bbf2f542bfaf0133a4d37}} 
+int {\bfseries on\+Menu}
+\item 
+\mbox{\Hypertarget{menu_8c_ad513fb26ae53eda54ac118f57ee333c6}\label{menu_8c_ad513fb26ae53eda54ac118f57ee333c6}} 
+int {\bfseries menu\+Type}
+\item 
+\mbox{\Hypertarget{menu_8c_a12c64edbe7b2393c9ea25680e4845ed4}\label{menu_8c_a12c64edbe7b2393c9ea25680e4845ed4}} 
+int {\bfseries choix}
+\item 
+\mbox{\Hypertarget{menu_8c_a085fa1a30b8ae09553a6bbf340dc8d59}\label{menu_8c_a085fa1a30b8ae09553a6bbf340dc8d59}} 
+int {\bfseries hero} = 1
+\item 
+\mbox{\Hypertarget{menu_8c_ae2c6087027bfdf561a2b766975b47ee8}\label{menu_8c_ae2c6087027bfdf561a2b766975b47ee8}} 
+int {\bfseries timer}
+\item 
+\mbox{\Hypertarget{menu_8c_aaa7e2faaefcada5e1fa2e88d1de46832}\label{menu_8c_aaa7e2faaefcada5e1fa2e88d1de46832}} 
+int {\bfseries record}
+\item 
+\mbox{\Hypertarget{menu_8c_a616b2737a3231a7b4a991d195e194a11}\label{menu_8c_a616b2737a3231a7b4a991d195e194a11}} 
+int {\bfseries record\+\_\+battu}
+\item 
+\mbox{\Hypertarget{menu_8c_a3b6a348cf9d20d9f3ae2985637af1bf2}\label{menu_8c_a3b6a348cf9d20d9f3ae2985637af1bf2}} 
+int {\bfseries timer\+\_\+reset}
+\item 
+\mbox{\Hypertarget{menu_8c_a1cde05803a03d9bd68525986c9eac616}\label{menu_8c_a1cde05803a03d9bd68525986c9eac616}} 
+int {\bfseries total\+Pieces}
+\item 
+\mbox{\Hypertarget{menu_8c_a770f2d08abdb69279875e03b3aeda047}\label{menu_8c_a770f2d08abdb69279875e03b3aeda047}} 
+int {\bfseries total\+Morts}
+\item 
+\mbox{\Hypertarget{menu_8c_abc677068e75e97321e95f8a181ab686a}\label{menu_8c_abc677068e75e97321e95f8a181ab686a}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries fond\+\_\+menu\+\_\+principal}
+\item 
+\mbox{\Hypertarget{menu_8c_a03973499622615050571fc2303dbab38}\label{menu_8c_a03973499622615050571fc2303dbab38}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries fond\+\_\+menu\+\_\+fin}
+\item 
+\mbox{\Hypertarget{menu_8c_a8d68082edd693bfc43d2b8e7b374acb1}\label{menu_8c_a8d68082edd693bfc43d2b8e7b374acb1}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries img\+\_\+gameover}
+\item 
+\mbox{\Hypertarget{menu_8c_a25a15548523ac9d3daf7d5b787953d17}\label{menu_8c_a25a15548523ac9d3daf7d5b787953d17}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries fleches}
+\item 
+\mbox{\Hypertarget{menu_8c_acde6625d71019fb28d2fb5bfc95bd1b7}\label{menu_8c_acde6625d71019fb28d2fb5bfc95bd1b7}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries volume\+\_\+on}
+\item 
+\mbox{\Hypertarget{menu_8c_a6798ceae69e2ae0d24e261b8059b71ae}\label{menu_8c_a6798ceae69e2ae0d24e261b8059b71ae}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries volume\+\_\+off}
+\item 
+\mbox{\Hypertarget{menu_8c_a58501062e0021fd03c2e8aefbd545ce6}\label{menu_8c_a58501062e0021fd03c2e8aefbd545ce6}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries mario}
+\item 
+\mbox{\Hypertarget{menu_8c_ab3fe761f1070f5f3908c4d300ff2e86b}\label{menu_8c_ab3fe761f1070f5f3908c4d300ff2e86b}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries luigi}
+\item 
+\mbox{\Hypertarget{menu_8c_a65058399771dd36ab2783859e7d3e435}\label{menu_8c_a65058399771dd36ab2783859e7d3e435}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries yoshi}
+\item 
+\mbox{\Hypertarget{menu_8c_a7275b0c73e7ed68a4bdcd83a0fdb0715}\label{menu_8c_a7275b0c73e7ed68a4bdcd83a0fdb0715}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries dk}
+\item 
+\mbox{\Hypertarget{menu_8c_a3be1a9c3b05887626db2e3b2ccede308}\label{menu_8c_a3be1a9c3b05887626db2e3b2ccede308}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries wario}
+\item 
+\mbox{\Hypertarget{menu_8c_ae62cac9be5096ec7408fb11fbf432c4d}\label{menu_8c_ae62cac9be5096ec7408fb11fbf432c4d}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries waluigi}
+\item 
+\mbox{\Hypertarget{menu_8c_a0290ccf1b9a54c7a234fcf9bd0d4764e}\label{menu_8c_a0290ccf1b9a54c7a234fcf9bd0d4764e}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries total\+Piece}
+\item 
+\mbox{\Hypertarget{menu_8c_a17be633f9ddbcdacb07e46352464f590}\label{menu_8c_a17be633f9ddbcdacb07e46352464f590}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries total\+Mort}
+\item 
+\mbox{\Hypertarget{menu_8c_a81506c7c67dbc00c7fa51bc211a1c648}\label{menu_8c_a81506c7c67dbc00c7fa51bc211a1c648}} 
+SDL\+\_\+bool {\bfseries volume} = SDL\+\_\+\+TRUE
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+S\textquotesingle{}occupe des fonctions relatives à l\textquotesingle{}affichage et à la mise à jour des menus. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{menu_8c_a13795b191929e9b34e58e655447fd651}\label{menu_8c_a13795b191929e9b34e58e655447fd651}} 
+\index{menu.c@{menu.c}!dessineMenuFin@{dessineMenuFin}}
+\index{dessineMenuFin@{dessineMenuFin}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{dessineMenuFin()}{dessineMenuFin()}}
+{\footnotesize\ttfamily void dessine\+Menu\+Fin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine le menu de fin de partie à l\textquotesingle{}écran. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_ac6b8260c5ba63b8330b55429b8f6ab82}\label{menu_8c_ac6b8260c5ba63b8330b55429b8f6ab82}} 
+\index{menu.c@{menu.c}!dessineMenuGameover@{dessineMenuGameover}}
+\index{dessineMenuGameover@{dessineMenuGameover}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{dessineMenuGameover()}{dessineMenuGameover()}}
+{\footnotesize\ttfamily void dessine\+Menu\+Gameover (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine le menu de gameover. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_a7435cf2ca6682bdbd3f37e656723b0f6}\label{menu_8c_a7435cf2ca6682bdbd3f37e656723b0f6}} 
+\index{menu.c@{menu.c}!dessineMenuPause@{dessineMenuPause}}
+\index{dessineMenuPause@{dessineMenuPause}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{dessineMenuPause()}{dessineMenuPause()}}
+{\footnotesize\ttfamily void dessine\+Menu\+Pause (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine le menu pause à l\textquotesingle{}écran. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_ae44974e279fcd2f25ffabf75dd97334e}\label{menu_8c_ae44974e279fcd2f25ffabf75dd97334e}} 
+\index{menu.c@{menu.c}!dessineMenuPrincipal@{dessineMenuPrincipal}}
+\index{dessineMenuPrincipal@{dessineMenuPrincipal}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{dessineMenuPrincipal()}{dessineMenuPrincipal()}}
+{\footnotesize\ttfamily void dessine\+Menu\+Principal (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine le menu start à l\textquotesingle{}écran. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_aeb312566d0f594e6772d6e92049f5069}\label{menu_8c_aeb312566d0f594e6772d6e92049f5069}} 
+\index{menu.c@{menu.c}!initMenus@{initMenus}}
+\index{initMenus@{initMenus}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{initMenus()}{initMenus()}}
+{\footnotesize\ttfamily void init\+Menus (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui charge l\textquotesingle{}image du menu. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_ab64dbeb7003ac501878862143e8f6a14}\label{menu_8c_ab64dbeb7003ac501878862143e8f6a14}} 
+\index{menu.c@{menu.c}!initTypeMenu@{initTypeMenu}}
+\index{initTypeMenu@{initTypeMenu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{initTypeMenu()}{initTypeMenu()}}
+{\footnotesize\ttfamily void init\+Type\+Menu (\begin{DoxyParamCaption}\item[{int}]{valeur,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Fonction qui définit si on est dans un menu et quel type de menu. 
+
+param\mbox{[}in\mbox{]} int valeur valeur correspond à jeu ou menu param\mbox{[}in\mbox{]} int type valeur correspondant au menu start ou menu pause
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_ae8934389b8c49582a7b8776295332f68}\label{menu_8c_ae8934389b8c49582a7b8776295332f68}} 
+\index{menu.c@{menu.c}!libereMenus@{libereMenus}}
+\index{libereMenus@{libereMenus}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{libereMenus()}{libereMenus()}}
+{\footnotesize\ttfamily void libere\+Menus (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui libère l\textquotesingle{}image du menu. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_a7481c7d77e20e8e8284ab51da8c0440e}\label{menu_8c_a7481c7d77e20e8e8284ab51da8c0440e}} 
+\index{menu.c@{menu.c}!majMenuFin@{majMenuFin}}
+\index{majMenuFin@{majMenuFin}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{majMenuFin()}{majMenuFin()}}
+{\footnotesize\ttfamily void maj\+Menu\+Fin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les évênements du menu de fin de partie. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_a47c278cbb5995ba5ba939cbffc25be36}\label{menu_8c_a47c278cbb5995ba5ba939cbffc25be36}} 
+\index{menu.c@{menu.c}!majMenuGameover@{majMenuGameover}}
+\index{majMenuGameover@{majMenuGameover}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{majMenuGameover()}{majMenuGameover()}}
+{\footnotesize\ttfamily void maj\+Menu\+Gameover (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les évênements du menu gameover. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_a68e7bf49653633671d2a842ac0cd7db3}\label{menu_8c_a68e7bf49653633671d2a842ac0cd7db3}} 
+\index{menu.c@{menu.c}!majMenuPause@{majMenuPause}}
+\index{majMenuPause@{majMenuPause}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{majMenuPause()}{majMenuPause()}}
+{\footnotesize\ttfamily void maj\+Menu\+Pause (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les évênements du menu pause. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_a6ae3badf360d2d2148cfc970c479049c}\label{menu_8c_a6ae3badf360d2d2148cfc970c479049c}} 
+\index{menu.c@{menu.c}!majMenuPrincipal@{majMenuPrincipal}}
+\index{majMenuPrincipal@{majMenuPrincipal}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{majMenuPrincipal()}{majMenuPrincipal()}}
+{\footnotesize\ttfamily void maj\+Menu\+Principal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les évênements du menu start. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_a3c2426d31fad5d72096cd8610bc2b3af}\label{menu_8c_a3c2426d31fad5d72096cd8610bc2b3af}} 
+\index{menu.c@{menu.c}!recupStatutMenu@{recupStatutMenu}}
+\index{recupStatutMenu@{recupStatutMenu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{recupStatutMenu()}{recupStatutMenu()}}
+{\footnotesize\ttfamily int recup\+Statut\+Menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui renvoi 0 si on est en jeu et 1 si on est dans un menu. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_aea8c06b46bf819121d301be6f73b9e75}\label{menu_8c_aea8c06b46bf819121d301be6f73b9e75}} 
+\index{menu.c@{menu.c}!recupTypeMenu@{recupTypeMenu}}
+\index{recupTypeMenu@{recupTypeMenu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{recupTypeMenu()}{recupTypeMenu()}}
+{\footnotesize\ttfamily int recup\+Type\+Menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui renvoi le type de menu actuel. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}

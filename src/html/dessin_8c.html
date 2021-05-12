@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MARIO 2D: Référence du fichier dessin.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MARIO 2D
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier dessin.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>S'occupe des fonctions graphiques du jeu.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="prototypes_8h_source.html">prototypes.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:affa6af5f27e8986e5ca132cccfd6e0fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dessin_8c.html#affa6af5f27e8986e5ca132cccfd6e0fe">chargeJeu</a> (int pauseMenu)</td></tr>
+<tr class="memdesc:affa6af5f27e8986e5ca132cccfd6e0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche à l'écran les différentes interfaces graphiques du jeu.  <a href="dessin_8c.html#affa6af5f27e8986e5ca132cccfd6e0fe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:affa6af5f27e8986e5ca132cccfd6e0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057d96c992c791a140aadefd9f754968"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dessin_8c.html#a057d96c992c791a140aadefd9f754968">chargeImage</a> (char *nom)</td></tr>
+<tr class="memdesc:a057d96c992c791a140aadefd9f754968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge une image de nom *nom.  <a href="dessin_8c.html#a057d96c992c791a140aadefd9f754968">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a057d96c992c791a140aadefd9f754968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb57e6ad2643e5a1d4d2257f8319b363"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dessin_8c.html#afb57e6ad2643e5a1d4d2257f8319b363">dessineImage</a> (SDL_Texture *image, int x, int y)</td></tr>
+<tr class="memdesc:afb57e6ad2643e5a1d4d2257f8319b363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine une image en fonction des paramètres passés en paramètres.  <a href="dessin_8c.html#afb57e6ad2643e5a1d4d2257f8319b363">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afb57e6ad2643e5a1d4d2257f8319b363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278a2ffbb995f7837d4970a4d7435b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dessin_8c.html#a278a2ffbb995f7837d4970a4d7435b63">delay</a> (unsigned int frameLimit)</td></tr>
+<tr class="memdesc:a278a2ffbb995f7837d4970a4d7435b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui va gérer les FPS pour laisser respirer le processeur de la machine.  <a href="dessin_8c.html#a278a2ffbb995f7837d4970a4d7435b63">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a278a2ffbb995f7837d4970a4d7435b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab41cf66613979032cf7d630d4bd8ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dessin_8c.html#aab41cf66613979032cf7d630d4bd8ab6">dessineTile</a> (SDL_Texture *image, int destx, int desty, int srcx, int srcy)</td></tr>
+<tr class="memdesc:aab41cf66613979032cf7d630d4bd8ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">charge une image dans un rectangle dont les coordonnées sont passées en paramètres  <a href="dessin_8c.html#aab41cf66613979032cf7d630d4bd8ab6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aab41cf66613979032cf7d630d4bd8ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4743bbc7f02f675340a494482e6c8d53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dessin_8c.html#a4743bbc7f02f675340a494482e6c8d53">initHUD</a> (void)</td></tr>
+<tr class="memdesc:a4743bbc7f02f675340a494482e6c8d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge les images pour les pièces et pour la vie.  <a href="dessin_8c.html#a4743bbc7f02f675340a494482e6c8d53">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4743bbc7f02f675340a494482e6c8d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c3c5c517076bb1a9d915ecfed78373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dessin_8c.html#a46c3c5c517076bb1a9d915ecfed78373">nettoyageHUD</a> (void)</td></tr>
+<tr class="memdesc:a46c3c5c517076bb1a9d915ecfed78373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nettoie et libère proprement les textures.  <a href="dessin_8c.html#a46c3c5c517076bb1a9d915ecfed78373">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a46c3c5c517076bb1a9d915ecfed78373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4769544504a547bb1ad95ed79882bae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dessin_8c.html#a4769544504a547bb1ad95ed79882bae8">dessineHUD</a> (void)</td></tr>
+<tr class="memdesc:a4769544504a547bb1ad95ed79882bae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine les compteurs de vie et de pièces sur le rendu.  <a href="dessin_8c.html#a4769544504a547bb1ad95ed79882bae8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4769544504a547bb1ad95ed79882bae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7eff8a03dd3e3403b49d782b6c8fa43e"><td class="memItemLeft" align="right" valign="top"><a id="a7eff8a03dd3e3403b49d782b6c8fa43e"></a>
+SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>HUD_vie</b></td></tr>
+<tr class="separator:a7eff8a03dd3e3403b49d782b6c8fa43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb017ccb3ae840dc7cf8e10e1759210"><td class="memItemLeft" align="right" valign="top"><a id="aacb017ccb3ae840dc7cf8e10e1759210"></a>
+SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>HUD_pieces</b></td></tr>
+<tr class="separator:aacb017ccb3ae840dc7cf8e10e1759210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3c40763501fb5666a9a607aa5c5a68"><td class="memItemLeft" align="right" valign="top"><a id="a9b3c40763501fb5666a9a607aa5c5a68"></a>
+SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>HUD_temps</b></td></tr>
+<tr class="separator:a9b3c40763501fb5666a9a607aa5c5a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645e4de1822ad95a04087d92de244a7a"><td class="memItemLeft" align="right" valign="top"><a id="a645e4de1822ad95a04087d92de244a7a"></a>
+SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>HUD_record</b></td></tr>
+<tr class="separator:a645e4de1822ad95a04087d92de244a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7e2faaefcada5e1fa2e88d1de46832"><td class="memItemLeft" align="right" valign="top"><a id="aaa7e2faaefcada5e1fa2e88d1de46832"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>record</b></td></tr>
+<tr class="separator:aaa7e2faaefcada5e1fa2e88d1de46832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c6087027bfdf561a2b766975b47ee8"><td class="memItemLeft" align="right" valign="top"><a id="ae2c6087027bfdf561a2b766975b47ee8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>timer</b></td></tr>
+<tr class="separator:ae2c6087027bfdf561a2b766975b47ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6a348cf9d20d9f3ae2985637af1bf2"><td class="memItemLeft" align="right" valign="top"><a id="a3b6a348cf9d20d9f3ae2985637af1bf2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>timer_reset</b> = 0</td></tr>
+<tr class="separator:a3b6a348cf9d20d9f3ae2985637af1bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>S'occupe des fonctions graphiques du jeu. </p>
+<dl class="section version"><dt>Version</dt><dd>1.7 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON </dd></dl>
+<dl class="section date"><dt>Date</dt><dd></dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a057d96c992c791a140aadefd9f754968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057d96c992c791a140aadefd9f754968">&#9670;&nbsp;</a></span>chargeImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* chargeImage </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge une image de nom *nom. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">char</td><td>*nom Chaine de caractères correspondant un nom de l'image à charger</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>SDL_Texture </dd></dl>
+
+</div>
+</div>
+<a id="affa6af5f27e8986e5ca132cccfd6e0fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa6af5f27e8986e5ca132cccfd6e0fe">&#9670;&nbsp;</a></span>chargeJeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chargeJeu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pauseMenu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche à l'écran les différentes interfaces graphiques du jeu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>pauseMenu <br  />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a278a2ffbb995f7837d4970a4d7435b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a278a2ffbb995f7837d4970a4d7435b63">&#9670;&nbsp;</a></span>delay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delay </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>frameLimit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui va gérer les FPS pour laisser respirer le processeur de la machine. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unsigned</td><td>int frameLimit <br  />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a4769544504a547bb1ad95ed79882bae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4769544504a547bb1ad95ed79882bae8">&#9670;&nbsp;</a></span>dessineHUD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dessineHUD </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine les compteurs de vie et de pièces sur le rendu. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="afb57e6ad2643e5a1d4d2257f8319b363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb57e6ad2643e5a1d4d2257f8319b363">&#9670;&nbsp;</a></span>dessineImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dessineImage </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Texture *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine une image en fonction des paramètres passés en paramètres. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">SDL_Texture</td><td>*image Une image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>x Coordonnées en abscisses (coin en haut à gauche de l'image) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>y Coordonnées en ordonnée (coin en haut à gauche de l'image)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aab41cf66613979032cf7d630d4bd8ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab41cf66613979032cf7d630d4bd8ab6">&#9670;&nbsp;</a></span>dessineTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dessineTile </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Texture *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>charge une image dans un rectangle dont les coordonnées sont passées en paramètres </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">SDL_Texture</td><td>*image l'image à charger </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>destx coordonnées x de la destination </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>desty coordonnées y de la destination </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>srcx coordonnées x de la source </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>srcy coordonnées y de la source</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a4743bbc7f02f675340a494482e6c8d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4743bbc7f02f675340a494482e6c8d53">&#9670;&nbsp;</a></span>initHUD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initHUD </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge les images pour les pièces et pour la vie. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a46c3c5c517076bb1a9d915ecfed78373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c3c5c517076bb1a9d915ecfed78373">&#9670;&nbsp;</a></span>nettoyageHUD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nettoyageHUD </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nettoie et libère proprement les textures. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

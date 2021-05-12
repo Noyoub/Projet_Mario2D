@@ -1,0 +1,98 @@
+\hypertarget{polices_8c}{}\doxysection{Référence du fichier polices.\+c}
+\label{polices_8c}\index{polices.c@{polices.c}}
+
+
+S\textquotesingle{}occupe des fonctions de chargement des polices.  
+
+
+{\ttfamily \#include \char`\"{}prototypes.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{polices_8c_a36e1e76e64e8a77b3d5d7ab87c263a36}{charge\+Police}} (char $\ast$name, int size)
+\begin{DoxyCompactList}\small\item\em On charge du texte à l\textquotesingle{}aide de SDL\+\_\+\+TTF dans une taille et une police spécifiée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{polices_8c_a399324577d8b0e6ef1d5da22a2fbf617}{fermeture\+Police}} ()
+\begin{DoxyCompactList}\small\item\em Libère la police proprement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{polices_8c_a81f68e7aa08c6af251a48951480f1523}{affiche\+Texte}} (char $\ast$text, int x, int y, int r, int g, int b, int a)
+\begin{DoxyCompactList}\small\item\em Dessine le texte sur le rendu pour des coordonnées et une couleur données. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{polices_8c_abf5bfa705e66ffc1ddaa6ce46c960873}\label{polices_8c_abf5bfa705e66ffc1ddaa6ce46c960873}} 
+TTF\+\_\+\+Font $\ast$ {\bfseries font}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+S\textquotesingle{}occupe des fonctions de chargement des polices. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{polices_8c_a81f68e7aa08c6af251a48951480f1523}\label{polices_8c_a81f68e7aa08c6af251a48951480f1523}} 
+\index{polices.c@{polices.c}!afficheTexte@{afficheTexte}}
+\index{afficheTexte@{afficheTexte}!polices.c@{polices.c}}
+\doxysubsubsection{\texorpdfstring{afficheTexte()}{afficheTexte()}}
+{\footnotesize\ttfamily void affiche\+Texte (\begin{DoxyParamCaption}\item[{char $\ast$}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b,  }\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Dessine le texte sur le rendu pour des coordonnées et une couleur données. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em char} & $\ast$text Texte à charger \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & x Coordonnées en abscisse \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & y Coordonnées en ordonnée \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & r Une des valeurs pour la couleur rouge \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & g Une des valeurs pour la couleur verte \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & b Une des valeurs pour la couleur bleu \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & a Opacité\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{polices_8c_a36e1e76e64e8a77b3d5d7ab87c263a36}\label{polices_8c_a36e1e76e64e8a77b3d5d7ab87c263a36}} 
+\index{polices.c@{polices.c}!chargePolice@{chargePolice}}
+\index{chargePolice@{chargePolice}!polices.c@{polices.c}}
+\doxysubsubsection{\texorpdfstring{chargePolice()}{chargePolice()}}
+{\footnotesize\ttfamily void charge\+Police (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+On charge du texte à l\textquotesingle{}aide de SDL\+\_\+\+TTF dans une taille et une police spécifiée. 
+
+param\mbox{[}in\mbox{]} char $\ast$ nom Chaine à charger param\mbox{[}in\mbox{]} int taille Taille du texte à charger
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{polices_8c_a399324577d8b0e6ef1d5da22a2fbf617}\label{polices_8c_a399324577d8b0e6ef1d5da22a2fbf617}} 
+\index{polices.c@{polices.c}!fermeturePolice@{fermeturePolice}}
+\index{fermeturePolice@{fermeturePolice}!polices.c@{polices.c}}
+\doxysubsubsection{\texorpdfstring{fermeturePolice()}{fermeturePolice()}}
+{\footnotesize\ttfamily void fermeture\+Police (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Libère la police proprement. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}

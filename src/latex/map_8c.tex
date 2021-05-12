@@ -1,0 +1,340 @@
+\hypertarget{map_8c}{}\doxysection{Référence du fichier map.\+c}
+\label{map_8c}\index{map.c@{map.c}}
+
+
+Ce fichier implémente toutes les fonctions nécessaires à la génération de la map. C\textquotesingle{}est-\/à-\/dire modéliser la map dans une matrice, récupérer ces coordonées aisni que gérer les collisions entre les textures de la map et le sprite du personnage.  
+
+
+{\ttfamily \#include \char`\"{}prototypes.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{map_8c_ae4ffa0d30973eaa964a8238fb2b47e98}{init\+Maps}} (int niveau)
+\begin{DoxyCompactList}\small\item\em Charge les images de fond pour un niveau donné. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{map_8c_ac610db9b553925b3fd200b82c6b5d505}{get\+Background}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère la texture background. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_a5f583cd8124b9c010528e3bd594bbcaf}{nettoyage\+Maps}} (void)
+\begin{DoxyCompactList}\small\item\em Nettoie et libère proprement le background et le tileset. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map_8c_aedc3b57a4ff83cb54f14b42d75e5475d}{recup\+Valeur\+Tile}} (int y, int x)
+\begin{DoxyCompactList}\small\item\em Fonction qui va retourner la valeur d\textquotesingle{}une tile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_ab240c41e87676659bb15e27a25dd4bd2}{charge\+Map}} (char $\ast$nom)
+\begin{DoxyCompactList}\small\item\em Lis le fichier texte et stocke la map dans des matrices pour pouvoir réutiliser facilement les coordonnées ensuite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_af4cf0f3db3ba2199653fa0d7f203a108}{dessine\+Map}} (int couche)
+\begin{DoxyCompactList}\small\item\em Dessine la map sur un rendu en récupérant les coordonnées de la matrice pour une couche donnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_ab7119f3953730414181d710d2b4590ac}{charge\+Niveau}} (int niveau)
+\begin{DoxyCompactList}\small\item\em Charge une nouvelle map en nettoyant la mémoire qui est occupée à ce moment précis. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map_8c_afffccd83f070982a23a8eeb90872b71d}{recup\+Perso\+StartX}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées de départ en abscisse du personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_a7b4fbf028717ec7ea28d970c23e041b3}{init\+Depart\+MapX}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées de départ en abscisse sur la map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map_8c_ae834cb64ed45186570ea08e068cb9a95}{recup\+Perso\+StartY}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées de départ en ordonnée du personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_aee09450cf06b3a228f85a7a616387174}{init\+Depart\+MapY}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées de départ en ordonnée sur la map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map_8c_ad77db6bc8ad01965056aa9398af4ef2e}{recup\+Fin\+MapX}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en abscisse de la fin de la map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map_8c_a8b720fcd2523ffd234ab46e437fe67f4}{recup\+Fin\+MapY}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en ordonnée de la fin de la map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map_8c_a54593d69c7671b93c93cd2b9f1415db6}{recup\+Debut\+MapX}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en abscisse du début de la map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{map_8c_a5b929f89ce8eefb984575c1688cfade4}{recup\+Debut\+MapY}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en ordonnée du début de la map. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{map_8c_a66dd606c759538b621a2361591d4b8c5}{recup\+Tileset}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère le tile\+Set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_a02ec4c6237bd0bd376e15de06a9c4fb2}{map\+Collision}} (\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$entite)
+\begin{DoxyCompactList}\small\item\em Gère les collisions avec les différentes textures de la map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_a67bc01386fa32d5341532b6e8e1e1d2f}{collision\+\_\+map\+\_\+monstre}} (\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$entite)
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer les collisions entre le monstre et la map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{map_8c_ac9becb8e2f80125547c8cc8f9d56b7ab}\label{map_8c_ac9becb8e2f80125547c8cc8f9d56b7ab}} 
+\mbox{\hyperlink{struct_map}{Map}} {\bfseries map}
+\item 
+\mbox{\Hypertarget{map_8c_aaa7e2faaefcada5e1fa2e88d1de46832}\label{map_8c_aaa7e2faaefcada5e1fa2e88d1de46832}} 
+int {\bfseries record}
+\item 
+\mbox{\Hypertarget{map_8c_a616b2737a3231a7b4a991d195e194a11}\label{map_8c_a616b2737a3231a7b4a991d195e194a11}} 
+int {\bfseries record\+\_\+battu} = 0
+\item 
+\mbox{\Hypertarget{map_8c_ae2c6087027bfdf561a2b766975b47ee8}\label{map_8c_ae2c6087027bfdf561a2b766975b47ee8}} 
+int {\bfseries timer}
+\item 
+\mbox{\Hypertarget{map_8c_a81506c7c67dbc00c7fa51bc211a1c648}\label{map_8c_a81506c7c67dbc00c7fa51bc211a1c648}} 
+SDL\+\_\+bool {\bfseries volume}
+\item 
+\mbox{\Hypertarget{map_8c_a6bd62503666dc50bc0f45ecf0db483cc}\label{map_8c_a6bd62503666dc50bc0f45ecf0db483cc}} 
+FILE $\ast$ {\bfseries fich} = NULL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ce fichier implémente toutes les fonctions nécessaires à la génération de la map. C\textquotesingle{}est-\/à-\/dire modéliser la map dans une matrice, récupérer ces coordonées aisni que gérer les collisions entre les textures de la map et le sprite du personnage. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{map_8c_ab240c41e87676659bb15e27a25dd4bd2}\label{map_8c_ab240c41e87676659bb15e27a25dd4bd2}} 
+\index{map.c@{map.c}!chargeMap@{chargeMap}}
+\index{chargeMap@{chargeMap}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{chargeMap()}{chargeMap()}}
+{\footnotesize\ttfamily void charge\+Map (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom }\end{DoxyParamCaption})}
+
+
+
+Lis le fichier texte et stocke la map dans des matrices pour pouvoir réutiliser facilement les coordonnées ensuite. 
+
+param\mbox{[}in\mbox{]} char $\ast$nom Nom de la map à modéliser
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_ab7119f3953730414181d710d2b4590ac}\label{map_8c_ab7119f3953730414181d710d2b4590ac}} 
+\index{map.c@{map.c}!chargeNiveau@{chargeNiveau}}
+\index{chargeNiveau@{chargeNiveau}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{chargeNiveau()}{chargeNiveau()}}
+{\footnotesize\ttfamily void charge\+Niveau (\begin{DoxyParamCaption}\item[{int}]{niveau }\end{DoxyParamCaption})}
+
+
+
+Charge une nouvelle map en nettoyant la mémoire qui est occupée à ce moment précis. 
+
+param\mbox{[}in\mbox{]} int niveau niveau choisi
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a67bc01386fa32d5341532b6e8e1e1d2f}\label{map_8c_a67bc01386fa32d5341532b6e8e1e1d2f}} 
+\index{map.c@{map.c}!collision\_map\_monstre@{collision\_map\_monstre}}
+\index{collision\_map\_monstre@{collision\_map\_monstre}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{collision\_map\_monstre()}{collision\_map\_monstre()}}
+{\footnotesize\ttfamily void collision\+\_\+map\+\_\+monstre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$}]{monstre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer les collisions entre le monstre et la map. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre objet monstre
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_af4cf0f3db3ba2199653fa0d7f203a108}\label{map_8c_af4cf0f3db3ba2199653fa0d7f203a108}} 
+\index{map.c@{map.c}!dessineMap@{dessineMap}}
+\index{dessineMap@{dessineMap}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{dessineMap()}{dessineMap()}}
+{\footnotesize\ttfamily void dessine\+Map (\begin{DoxyParamCaption}\item[{int}]{couche }\end{DoxyParamCaption})}
+
+
+
+Dessine la map sur un rendu en récupérant les coordonnées de la matrice pour une couche donnée. 
+
+param\mbox{[}in\mbox{]} int couche Nom de la couche à modéliser
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_ac610db9b553925b3fd200b82c6b5d505}\label{map_8c_ac610db9b553925b3fd200b82c6b5d505}} 
+\index{map.c@{map.c}!getBackground@{getBackground}}
+\index{getBackground@{getBackground}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{getBackground()}{getBackground()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ get\+Background (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère la texture background. 
+
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a7b4fbf028717ec7ea28d970c23e041b3}\label{map_8c_a7b4fbf028717ec7ea28d970c23e041b3}} 
+\index{map.c@{map.c}!initDepartMapX@{initDepartMapX}}
+\index{initDepartMapX@{initDepartMapX}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{initDepartMapX()}{initDepartMapX()}}
+{\footnotesize\ttfamily void init\+Depart\+MapX (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise les coordonnées de départ en abscisse sur la map. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur de la coordonnée
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_aee09450cf06b3a228f85a7a616387174}\label{map_8c_aee09450cf06b3a228f85a7a616387174}} 
+\index{map.c@{map.c}!initDepartMapY@{initDepartMapY}}
+\index{initDepartMapY@{initDepartMapY}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{initDepartMapY()}{initDepartMapY()}}
+{\footnotesize\ttfamily void init\+Depart\+MapY (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise les coordonnées de départ en ordonnée sur la map. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur de la coordonnée
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_ae4ffa0d30973eaa964a8238fb2b47e98}\label{map_8c_ae4ffa0d30973eaa964a8238fb2b47e98}} 
+\index{map.c@{map.c}!initMaps@{initMaps}}
+\index{initMaps@{initMaps}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{initMaps()}{initMaps()}}
+{\footnotesize\ttfamily void init\+Maps (\begin{DoxyParamCaption}\item[{int}]{niveau }\end{DoxyParamCaption})}
+
+
+
+Charge les images de fond pour un niveau donné. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em int} & niveau entier lié à un niveau (1, 2, 3 etc...)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a02ec4c6237bd0bd376e15de06a9c4fb2}\label{map_8c_a02ec4c6237bd0bd376e15de06a9c4fb2}} 
+\index{map.c@{map.c}!mapCollision@{mapCollision}}
+\index{mapCollision@{mapCollision}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{mapCollision()}{mapCollision()}}
+{\footnotesize\ttfamily void map\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$}]{personnage }\end{DoxyParamCaption})}
+
+
+
+Gère les collisions avec les différentes textures de la map. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$personnage un personnage (texture animée)
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a5f583cd8124b9c010528e3bd594bbcaf}\label{map_8c_a5f583cd8124b9c010528e3bd594bbcaf}} 
+\index{map.c@{map.c}!nettoyageMaps@{nettoyageMaps}}
+\index{nettoyageMaps@{nettoyageMaps}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{nettoyageMaps()}{nettoyageMaps()}}
+{\footnotesize\ttfamily void nettoyage\+Maps (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Nettoie et libère proprement le background et le tileset. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a54593d69c7671b93c93cd2b9f1415db6}\label{map_8c_a54593d69c7671b93c93cd2b9f1415db6}} 
+\index{map.c@{map.c}!recupDebutMapX@{recupDebutMapX}}
+\index{recupDebutMapX@{recupDebutMapX}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{recupDebutMapX()}{recupDebutMapX()}}
+{\footnotesize\ttfamily int recup\+Debut\+MapX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en abscisse du début de la map. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a5b929f89ce8eefb984575c1688cfade4}\label{map_8c_a5b929f89ce8eefb984575c1688cfade4}} 
+\index{map.c@{map.c}!recupDebutMapY@{recupDebutMapY}}
+\index{recupDebutMapY@{recupDebutMapY}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{recupDebutMapY()}{recupDebutMapY()}}
+{\footnotesize\ttfamily int recup\+Debut\+MapY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en ordonnée du début de la map. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_ad77db6bc8ad01965056aa9398af4ef2e}\label{map_8c_ad77db6bc8ad01965056aa9398af4ef2e}} 
+\index{map.c@{map.c}!recupFinMapX@{recupFinMapX}}
+\index{recupFinMapX@{recupFinMapX}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{recupFinMapX()}{recupFinMapX()}}
+{\footnotesize\ttfamily int recup\+Fin\+MapX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en abscisse de la fin de la map. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a8b720fcd2523ffd234ab46e437fe67f4}\label{map_8c_a8b720fcd2523ffd234ab46e437fe67f4}} 
+\index{map.c@{map.c}!recupFinMapY@{recupFinMapY}}
+\index{recupFinMapY@{recupFinMapY}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{recupFinMapY()}{recupFinMapY()}}
+{\footnotesize\ttfamily int recup\+Fin\+MapY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en ordonnée de la fin de la map. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_afffccd83f070982a23a8eeb90872b71d}\label{map_8c_afffccd83f070982a23a8eeb90872b71d}} 
+\index{map.c@{map.c}!recupPersoStartX@{recupPersoStartX}}
+\index{recupPersoStartX@{recupPersoStartX}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{recupPersoStartX()}{recupPersoStartX()}}
+{\footnotesize\ttfamily int recup\+Perso\+StartX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées de départ en abscisse du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_ae834cb64ed45186570ea08e068cb9a95}\label{map_8c_ae834cb64ed45186570ea08e068cb9a95}} 
+\index{map.c@{map.c}!recupPersoStartY@{recupPersoStartY}}
+\index{recupPersoStartY@{recupPersoStartY}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{recupPersoStartY()}{recupPersoStartY()}}
+{\footnotesize\ttfamily int recup\+Perso\+StartY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées de départ en ordonnée du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a66dd606c759538b621a2361591d4b8c5}\label{map_8c_a66dd606c759538b621a2361591d4b8c5}} 
+\index{map.c@{map.c}!recupTileset@{recupTileset}}
+\index{recupTileset@{recupTileset}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{recupTileset()}{recupTileset()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ recup\+Tileset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère le tile\+Set. 
+
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_aedc3b57a4ff83cb54f14b42d75e5475d}\label{map_8c_aedc3b57a4ff83cb54f14b42d75e5475d}} 
+\index{map.c@{map.c}!recupValeurTile@{recupValeurTile}}
+\index{recupValeurTile@{recupValeurTile}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{recupValeurTile()}{recupValeurTile()}}
+{\footnotesize\ttfamily int recup\+Valeur\+Tile (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va retourner la valeur d\textquotesingle{}une tile. 
+
+param\mbox{[}in\mbox{]} int x coordonnée x param\mbox{[}in\mbox{]} int y coordonnée y
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}

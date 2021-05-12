@@ -1,0 +1,131 @@
+\hypertarget{sons_8c}{}\doxysection{Référence du fichier sons.\+c}
+\label{sons_8c}\index{sons.c@{sons.c}}
+
+
+S\textquotesingle{}occupe de charger les sons et musiques.  
+
+
+{\ttfamily \#include \char`\"{}prototypes.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sons_8c_ab895592832efa18c8b7f39713babded0}{charge\+Musique}} (char filename\mbox{[}200\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui va charger et jouer une musique à l\textquotesingle{}infini. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sons_8c_ac5924fe6394a40306244a488967fece0}{libere\+Musique}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va libérer une musique. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sons_8c_a137856fff0a76bfb81835abf46f8f75c}{charge\+Son}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va charger un son. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sons_8c_ab8dcbc5874cd64c05642bb454d5432fc}{libere\+Son}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va libérer un son. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sons_8c_a9d35592ef0a2525ec29ff3881713c190}{joue\+Son}} (int type)
+\begin{DoxyCompactList}\small\item\em Fonction qui va jouer un son en fonction d\textquotesingle{}un évènement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sons_8c_ab1190ee0009fd104ba013ca1f9b0dafd}\label{sons_8c_ab1190ee0009fd104ba013ca1f9b0dafd}} 
+Mix\+\_\+\+Chunk $\ast$ {\bfseries pause\+\_\+sound}
+\item 
+\mbox{\Hypertarget{sons_8c_a8f343b72dbc34efcccccf4ea70332d36}\label{sons_8c_a8f343b72dbc34efcccccf4ea70332d36}} 
+Mix\+\_\+\+Chunk $\ast$ {\bfseries jump\+\_\+sound}
+\item 
+\mbox{\Hypertarget{sons_8c_a62c66db94d38d3399571a2feadb3ba3d}\label{sons_8c_a62c66db94d38d3399571a2feadb3ba3d}} 
+Mix\+\_\+\+Chunk $\ast$ {\bfseries coin\+\_\+sound}
+\item 
+\mbox{\Hypertarget{sons_8c_a2cb95d8ec23f049d74fec74cfac0af52}\label{sons_8c_a2cb95d8ec23f049d74fec74cfac0af52}} 
+Mix\+\_\+\+Chunk $\ast$ {\bfseries mob\+\_\+sound}
+\item 
+\mbox{\Hypertarget{sons_8c_a51ffc0b53042436491be19ae3f7250c3}\label{sons_8c_a51ffc0b53042436491be19ae3f7250c3}} 
+Mix\+\_\+\+Chunk $\ast$ {\bfseries mort\+\_\+sound}
+\item 
+\mbox{\Hypertarget{sons_8c_a4d109c7714adb84b5c5db6dcbc534a37}\label{sons_8c_a4d109c7714adb84b5c5db6dcbc534a37}} 
+Mix\+\_\+\+Chunk $\ast$ {\bfseries gameover\+\_\+sound}
+\item 
+\mbox{\Hypertarget{sons_8c_ae941c0b9c1430b9cfc9cfcbd1b4455be}\label{sons_8c_ae941c0b9c1430b9cfc9cfcbd1b4455be}} 
+Mix\+\_\+\+Music $\ast$ {\bfseries musique}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+S\textquotesingle{}occupe de charger les sons et musiques. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{sons_8c_ab895592832efa18c8b7f39713babded0}\label{sons_8c_ab895592832efa18c8b7f39713babded0}} 
+\index{sons.c@{sons.c}!chargeMusique@{chargeMusique}}
+\index{chargeMusique@{chargeMusique}!sons.c@{sons.c}}
+\doxysubsubsection{\texorpdfstring{chargeMusique()}{chargeMusique()}}
+{\footnotesize\ttfamily void charge\+Musique (\begin{DoxyParamCaption}\item[{char}]{filename\mbox{[}200\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va charger et jouer une musique à l\textquotesingle{}infini. 
+
+param\mbox{[}in\mbox{]} char filename\mbox{[}200\mbox{]} nom du fichier de la musique
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sons_8c_a137856fff0a76bfb81835abf46f8f75c}\label{sons_8c_a137856fff0a76bfb81835abf46f8f75c}} 
+\index{sons.c@{sons.c}!chargeSon@{chargeSon}}
+\index{chargeSon@{chargeSon}!sons.c@{sons.c}}
+\doxysubsubsection{\texorpdfstring{chargeSon()}{chargeSon()}}
+{\footnotesize\ttfamily void charge\+Son (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va charger un son. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sons_8c_a9d35592ef0a2525ec29ff3881713c190}\label{sons_8c_a9d35592ef0a2525ec29ff3881713c190}} 
+\index{sons.c@{sons.c}!joueSon@{joueSon}}
+\index{joueSon@{joueSon}!sons.c@{sons.c}}
+\doxysubsubsection{\texorpdfstring{joueSon()}{joueSon()}}
+{\footnotesize\ttfamily void joue\+Son (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va jouer un son en fonction d\textquotesingle{}un évènement. 
+
+param\mbox{[}in\mbox{]} int type type d\textquotesingle{}évènement
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sons_8c_ac5924fe6394a40306244a488967fece0}\label{sons_8c_ac5924fe6394a40306244a488967fece0}} 
+\index{sons.c@{sons.c}!libereMusique@{libereMusique}}
+\index{libereMusique@{libereMusique}!sons.c@{sons.c}}
+\doxysubsubsection{\texorpdfstring{libereMusique()}{libereMusique()}}
+{\footnotesize\ttfamily void libere\+Musique (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va libérer une musique. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sons_8c_ab8dcbc5874cd64c05642bb454d5432fc}\label{sons_8c_ab8dcbc5874cd64c05642bb454d5432fc}} 
+\index{sons.c@{sons.c}!libereSon@{libereSon}}
+\index{libereSon@{libereSon}!sons.c@{sons.c}}
+\doxysubsubsection{\texorpdfstring{libereSon()}{libereSon()}}
+{\footnotesize\ttfamily void libere\+Son (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va libérer un son. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}

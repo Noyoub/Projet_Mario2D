@@ -1,0 +1,135 @@
+\hypertarget{constantes_8h}{}\doxysection{Référence du fichier constantes.\+h}
+\label{constantes_8h}\index{constantes.h@{constantes.h}}
+
+
+Implémentation de toutes les constantes nécessaires au projet.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$SDL2/\+SDL.\+h$>$}\newline
+{\ttfamily \#include $<$SDL2/\+SDL\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$SDL2/\+SDL\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$SDL2/\+SDL\+\_\+mixer.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{constantes_8h_a6068a247ff9ece1b0a9773c58144906c}\label{constantes_8h_a6068a247ff9ece1b0a9773c58144906c}} 
+\#define {\bfseries LARGEUR\+\_\+\+FENETRE}~800
+\item 
+\mbox{\Hypertarget{constantes_8h_afd1a1e285af564b849b17498e82e1a41}\label{constantes_8h_afd1a1e285af564b849b17498e82e1a41}} 
+\#define {\bfseries HAUTEUR\+\_\+\+FENETRE}~480
+\item 
+\mbox{\Hypertarget{constantes_8h_a76662f0d16ad71935393f5f84be6c5a8}\label{constantes_8h_a76662f0d16ad71935393f5f84be6c5a8}} 
+\#define {\bfseries MAX\+\_\+\+MAP\+\_\+X}~150
+\item 
+\mbox{\Hypertarget{constantes_8h_a41191e8d1d7e66bfa4dec118bff4da42}\label{constantes_8h_a41191e8d1d7e66bfa4dec118bff4da42}} 
+\#define {\bfseries MAX\+\_\+\+MAP\+\_\+Y}~150
+\item 
+\mbox{\Hypertarget{constantes_8h_a22c2b2aa23a461a79661060683611305}\label{constantes_8h_a22c2b2aa23a461a79661060683611305}} 
+\#define {\bfseries TAILLE\+\_\+\+TILE}~32
+\item 
+\mbox{\Hypertarget{constantes_8h_a6f95ffd6c10d3998ffb743554108abb5}\label{constantes_8h_a6f95ffd6c10d3998ffb743554108abb5}} 
+\#define {\bfseries TEMPS\+\_\+\+ENTRE\+\_\+2\+\_\+\+FRAMES\+\_\+\+JOUEUR}~4
+\item 
+\mbox{\Hypertarget{constantes_8h_aca6087a51a5643298bcc0db9a8f086c8}\label{constantes_8h_aca6087a51a5643298bcc0db9a8f086c8}} 
+\#define {\bfseries LARGEUR\+\_\+\+JOUEUR}~32
+\item 
+\mbox{\Hypertarget{constantes_8h_ac50a14f81f22e59556625cd0b4120cba}\label{constantes_8h_ac50a14f81f22e59556625cd0b4120cba}} 
+\#define {\bfseries HAUTEUR\+\_\+\+JOUEUR}~40
+\item 
+\mbox{\Hypertarget{constantes_8h_a5e49e4fcdacaced59684067f37957ee0}\label{constantes_8h_a5e49e4fcdacaced59684067f37957ee0}} 
+\#define {\bfseries MONSTRES\+\_\+\+MAX}~50
+\item 
+\mbox{\Hypertarget{constantes_8h_aafb6ab5f0202fbf88b4eae8f2e1a4813}\label{constantes_8h_aafb6ab5f0202fbf88b4eae8f2e1a4813}} 
+\#define {\bfseries LARGEUR\+\_\+\+MONSTRE}~20
+\item 
+\mbox{\Hypertarget{constantes_8h_a4aa69848118ea289074db6efec146ad1}\label{constantes_8h_a4aa69848118ea289074db6efec146ad1}} 
+\#define {\bfseries HAUTEUR\+\_\+\+MONSTRE}~22
+\item 
+\mbox{\Hypertarget{constantes_8h_a55b91b0f3c865859d31ffc804ae71984}\label{constantes_8h_a55b91b0f3c865859d31ffc804ae71984}} 
+\#define {\bfseries VITESSE\+\_\+\+JOUEUR}~4
+\item 
+\mbox{\Hypertarget{constantes_8h_a16ccf2890fcfc78a47402fe94becb6ca}\label{constantes_8h_a16ccf2890fcfc78a47402fe94becb6ca}} 
+\#define {\bfseries IMMOBILE}~0
+\item 
+\mbox{\Hypertarget{constantes_8h_a96ec8c1ba2e7111892b6b9f5619a9b63}\label{constantes_8h_a96ec8c1ba2e7111892b6b9f5619a9b63}} 
+\#define {\bfseries MARCHE}~1
+\item 
+\mbox{\Hypertarget{constantes_8h_a9b6991417c59a7300616079ff2b495e6}\label{constantes_8h_a9b6991417c59a7300616079ff2b495e6}} 
+\#define {\bfseries SAUT}~2
+\item 
+\mbox{\Hypertarget{constantes_8h_a74ad93b3e25b60b4c2e923b5281fbfe4}\label{constantes_8h_a74ad93b3e25b60b4c2e923b5281fbfe4}} 
+\#define {\bfseries MORT}~3
+\item 
+\mbox{\Hypertarget{constantes_8h_a80fb826a684cf3f0d306b22aa100ddac}\label{constantes_8h_a80fb826a684cf3f0d306b22aa100ddac}} 
+\#define {\bfseries RIGHT}~1
+\item 
+\mbox{\Hypertarget{constantes_8h_a437ef08681e7210d6678427030446a54}\label{constantes_8h_a437ef08681e7210d6678427030446a54}} 
+\#define {\bfseries LEFT}~2
+\item 
+\mbox{\Hypertarget{constantes_8h_a0b20df4ad6717745c6b3b948ef90bc47}\label{constantes_8h_a0b20df4ad6717745c6b3b948ef90bc47}} 
+\#define {\bfseries LIMITE\+\_\+X}~400
+\item 
+\mbox{\Hypertarget{constantes_8h_a647c34929d17bfd2aebf5deb71016c7a}\label{constantes_8h_a647c34929d17bfd2aebf5deb71016c7a}} 
+\#define {\bfseries LIMITE\+\_\+Y}~220
+\item 
+\mbox{\Hypertarget{constantes_8h_aeb1cbf9a78b3f0727108cd8c3c50f7eb}\label{constantes_8h_aeb1cbf9a78b3f0727108cd8c3c50f7eb}} 
+\#define {\bfseries LIMITE\+\_\+W}~100
+\item 
+\mbox{\Hypertarget{constantes_8h_a780881852648529fedb798c4d117ee08}\label{constantes_8h_a780881852648529fedb798c4d117ee08}} 
+\#define {\bfseries LIMITE\+\_\+H}~80
+\item 
+\mbox{\Hypertarget{constantes_8h_a65bdf465111b868d949d0b38e8dadc81}\label{constantes_8h_a65bdf465111b868d949d0b38e8dadc81}} 
+\#define {\bfseries VITESSE\+\_\+\+GRAVITE}~0.\+6
+\item 
+\mbox{\Hypertarget{constantes_8h_a497f0bdbc68b2ba48c8d5fb2058b76c1}\label{constantes_8h_a497f0bdbc68b2ba48c8d5fb2058b76c1}} 
+\#define {\bfseries VITESSE\+\_\+\+CHUTE}~15
+\item 
+\mbox{\Hypertarget{constantes_8h_a97039e88395072b9182b25c6cd92dd99}\label{constantes_8h_a97039e88395072b9182b25c6cd92dd99}} 
+\#define {\bfseries HAUTEUR\+\_\+\+SAUT}~11
+\item 
+\mbox{\Hypertarget{constantes_8h_ae5e780d55e24cf3cf108117abcf0e98d}\label{constantes_8h_ae5e780d55e24cf3cf108117abcf0e98d}} 
+\#define {\bfseries SEUIL\+\_\+\+TILES\+\_\+\+TRAVERSABLES\+\_\+\+HAUT}~48
+\item 
+\mbox{\Hypertarget{constantes_8h_af6dd3a8dea0131ebd4b3eb2d9191120b}\label{constantes_8h_af6dd3a8dea0131ebd4b3eb2d9191120b}} 
+\#define {\bfseries SEUIL\+\_\+\+TILES\+\_\+\+TRAVERSABLES}~30
+\item 
+\mbox{\Hypertarget{constantes_8h_aefe434d43a14b17529e28aa28ddb6548}\label{constantes_8h_aefe434d43a14b17529e28aa28ddb6548}} 
+\#define {\bfseries TILE\+\_\+\+POWER\+\_\+\+UP\+\_\+\+DEBUT}~9
+\item 
+\mbox{\Hypertarget{constantes_8h_aeb6714960360f56380985abe25795395}\label{constantes_8h_aeb6714960360f56380985abe25795395}} 
+\#define {\bfseries TILE\+\_\+\+POWER\+\_\+\+UP\+\_\+\+FIN}~9
+\item 
+\mbox{\Hypertarget{constantes_8h_a5eafb06a1b67d7f68ad8486feb0fcb58}\label{constantes_8h_a5eafb06a1b67d7f68ad8486feb0fcb58}} 
+\#define {\bfseries TILE\+\_\+\+CHECKPOINT}~11
+\item 
+\mbox{\Hypertarget{constantes_8h_a1f27ba39bcb4102038f65dd0e043a0b3}\label{constantes_8h_a1f27ba39bcb4102038f65dd0e043a0b3}} 
+\#define {\bfseries TILE\+\_\+\+PIKES}~10
+\item 
+\mbox{\Hypertarget{constantes_8h_ae35263972f6f27b16d3a522258aa23f2}\label{constantes_8h_ae35263972f6f27b16d3a522258aa23f2}} 
+\#define {\bfseries TILE\+\_\+\+LAVE}~7
+\item 
+\mbox{\Hypertarget{constantes_8h_ab1cca9b08f494f21519940a88c60b347}\label{constantes_8h_ab1cca9b08f494f21519940a88c60b347}} 
+\#define {\bfseries TILE\+\_\+\+MONSTRE}~2
+\item 
+\mbox{\Hypertarget{constantes_8h_ab8ee13704eabc83bc5e1959a4b9e8781}\label{constantes_8h_ab8ee13704eabc83bc5e1959a4b9e8781}} 
+\#define {\bfseries NIVEAU\+\_\+\+MAX}~3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implémentation de toutes les constantes nécessaires au projet. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}

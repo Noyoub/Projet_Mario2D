@@ -1,0 +1,1422 @@
+\hypertarget{prototypes_8h}{}\doxysection{Référence du fichier prototypes.\+h}
+\label{prototypes_8h}\index{prototypes.h@{prototypes.h}}
+
+
+Ce fichier contient tous les prototypes des fonctions qui vont être utilisées dans le cadre de ce projet.  
+
+
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{prototypes_8h_a1694e8d0d1811f31bdd8243f13c5fc69}{scroll\+Sur\+Joueur}} (void)
+\begin{DoxyCompactList}\small\item\em Gestion du scrolling de la map, centré sur le héros, et adapté à la vitesse de ce dernier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ab7119f3953730414181d710d2b4590ac}{charge\+Niveau}} (int niveau)
+\begin{DoxyCompactList}\small\item\em Charge une nouvelle map en nettoyant la mémoire qui est occupée à ce moment précis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a46c3c5c517076bb1a9d915ecfed78373}{nettoyage\+HUD}} (void)
+\begin{DoxyCompactList}\small\item\em Nettoie et libère proprement les textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a5f583cd8124b9c010528e3bd594bbcaf}{nettoyage\+Maps}} (void)
+\begin{DoxyCompactList}\small\item\em Nettoie et libère proprement le background et le tileset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a3e1f2fd7f6d738f1b6dbe36243f8ced1}{nettoyage\+Joueur}} (void)
+\begin{DoxyCompactList}\small\item\em Vide la mémoire liée au sprite proprement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ab4af1284fd7db54bc3f65596c7be4d41}{nettoyage\+All}} (void)
+\begin{DoxyCompactList}\small\item\em La fonction quitte tous les outils proprement en libérant la mémoire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_afb5ce2788220041519d643b6e7737419}{fermeture\+Police}} (void)
+\begin{DoxyCompactList}\small\item\em Libère la police proprement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a278a2ffbb995f7837d4970a4d7435b63}{delay}} (unsigned int frame\+Limit)
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer les FPS pour laisser respirer le processeur de la machine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_affa6af5f27e8986e5ca132cccfd6e0fe}{charge\+Jeu}} (int pause\+Menu)
+\begin{DoxyCompactList}\small\item\em Affiche à l\textquotesingle{}écran les différentes interfaces graphiques du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a4769544504a547bb1ad95ed79882bae8}{dessine\+HUD}} (void)
+\begin{DoxyCompactList}\small\item\em Dessine les compteurs de vie et de pièces sur le rendu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_aa5ff9b0eb001981fb81c6b6a8ad437d4}{dessine\+Image}} (SDL\+\_\+\+Texture $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Dessine une image en fonction des paramètres passés en paramètres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_af4cf0f3db3ba2199653fa0d7f203a108}{dessine\+Map}} (int couche)
+\begin{DoxyCompactList}\small\item\em Dessine la map sur un rendu en récupérant les coordonnées de la matrice pour une couche donnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_abd7f639e120c78780a1046b61e98f28e}{dessine\+Joueur}} (void)
+\begin{DoxyCompactList}\small\item\em Dessine le héros aux coordonnées récupérées dans la fonction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a81f68e7aa08c6af251a48951480f1523}{affiche\+Texte}} (char $\ast$text, int x, int y, int r, int g, int b, int a)
+\begin{DoxyCompactList}\small\item\em Dessine le texte sur le rendu pour des coordonnées et une couleur données. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_aab41cf66613979032cf7d630d4bd8ab6}{dessine\+Tile}} (SDL\+\_\+\+Texture $\ast$image, int destx, int desty, int srcx, int srcy)
+\begin{DoxyCompactList}\small\item\em charge une image dans un rectangle dont les coordonnées sont passées en paramètres \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_adf1d8984fda4ff8744c8225cc304b538}{gestion\+Touches}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Appelle la fonction \mbox{\hyperlink{prototypes_8h_a8151adaa507a8c5b649f583f00bf61fd}{recup\+Touche()}} \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{prototypes_8h_ac610db9b553925b3fd200b82c6b5d505}{get\+Background}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère la texture background. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a54593d69c7671b93c93cd2b9f1415db6}{recup\+Debut\+MapX}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en abscisse du début de la map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a5b929f89ce8eefb984575c1688cfade4}{recup\+Debut\+MapY}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en ordonnée du début de la map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a8151adaa507a8c5b649f583f00bf61fd}{recup\+Touche}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer les touches du clavier, c\textquotesingle{}est-\/à-\/dire qu\textquotesingle{}elle va boucler sur chaque évènement qui pourra être traité par le jeu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a022a27f356efe8beb481560a2a7fcdc0}{recup\+Niveau}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}entier lié au level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_ad77db6bc8ad01965056aa9398af4ef2e}{recup\+Fin\+MapX}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en abscisse de la fin de la map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a8b720fcd2523ffd234ab46e437fe67f4}{recup\+Fin\+MapY}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en ordonnée de la fin de la map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_aacca3f18ff5cab2ab676b4788e04a8ea}{recup\+Nombre\+De\+Pieces}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère le nombre de pièce(s) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a974cbb87bcf524e2c1b9dab6f3849a33}{recup\+Nombre\+De\+Vies}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère le nombre de vie(s) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$ \mbox{\hyperlink{prototypes_8h_abbc2423b650bd151a25c46d256f2ba0a}{recup\+Joueur}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère le \mbox{\hyperlink{struct_personnage}{Personnage}} de player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a66ecbd7cd424068e192bf660ca7577a8}{recup\+JoueurX}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en abscisse du héros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_afee5fe560bf506918ee1bab46d6f1d02}{recup\+JoueurY}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées en ordonnée du héros. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{prototypes_8h_ad32a83e14240bcaeff478bb967261d72}{recup\+Rendu}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère un rendu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_afffccd83f070982a23a8eeb90872b71d}{recup\+Perso\+StartX}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées de départ en abscisse du personnage. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_ae834cb64ed45186570ea08e068cb9a95}{recup\+Perso\+StartY}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère les coordonnées de départ en ordonnée du personnage. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{prototypes_8h_a66dd606c759538b621a2361591d4b8c5}{recup\+Tileset}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère le tile\+Set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a8c3ce793e9c1aa17f38ac897502e5a3a}{init}} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Initialisation globale des outils SDL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a4743bbc7f02f675340a494482e6c8d53}{init\+HUD}} (void)
+\begin{DoxyCompactList}\small\item\em Charge les images pour les pièces et pour la vie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ae4ffa0d30973eaa964a8238fb2b47e98}{init\+Maps}} (int niveau)
+\begin{DoxyCompactList}\small\item\em Charge les images de fond pour un niveau donné. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a1f95054bbfda886cb58c81fff2c547ae}{init\+Sprite\+Joueur}} (int hero)
+\begin{DoxyCompactList}\small\item\em Charge le spritesheet du héros au début du level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a1f82ff6c274b947b154a1c67a13f8b13}{init\+Joueur}} (int nouveau\+Niveau)
+\begin{DoxyCompactList}\small\item\em Initialise le héros dans un niveau donné \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a4252402920f8412e60a57d9b13bdf2e3}{charge\+Police}} (char $\ast$nom, int taille)
+\begin{DoxyCompactList}\small\item\em On charge du texte à l\textquotesingle{}aide de SDL\+\_\+\+TTF dans une taille et une police spécifiée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ae9ce4316681f06f1ce691d9ba31c15db}{chargement\+Jeu}} ()
+\begin{DoxyCompactList}\small\item\em S\textquotesingle{}occupe de charger le jeu, c\textquotesingle{}est-\/à-\/dire la map et le sprite du personnage. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{prototypes_8h_a057d96c992c791a140aadefd9f754968}{charge\+Image}} (char $\ast$nom)
+\begin{DoxyCompactList}\small\item\em Charge une image de nom $\ast$nom. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ab240c41e87676659bb15e27a25dd4bd2}{charge\+Map}} (char $\ast$nom)
+\begin{DoxyCompactList}\small\item\em Lis le fichier texte et stocke la map dans des matrices pour pouvoir réutiliser facilement les coordonnées ensuite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a269af56aed64fd6b2197185bdd21cc92}{map\+Collision}} (\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$personnage)
+\begin{DoxyCompactList}\small\item\em Gère les collisions avec les différentes textures de la map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a88157b320cc069facb592880887a6e46}{init\+Nombre\+De\+Vies}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Défini le nombre de vie(s) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a3f77726f9f9d5270145d3f198902fcb0}{init\+Nombre\+De\+Pieces}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise le nombre de piece(s) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ad929f8ccf334a1f20769da83d12f90f8}{init\+JoueurX}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées en abscisse du héros. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_aab01456feb2e384c6ec1c2de1bb24af0}{init\+JoueurY}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées en ordonnée du héros. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a7b4fbf028717ec7ea28d970c23e041b3}{init\+Depart\+MapX}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées de départ en abscisse sur la map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_aee09450cf06b3a228f85a7a616387174}{init\+Depart\+MapY}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées de départ en ordonnée sur la map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a91d70a5caec7a2c705f54f08646df552}{change\+Niveau}} (int valeur)
+\begin{DoxyCompactList}\small\item\em Change la valeur du niveau en cours. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ae704c00c46f7dbf74de149aa27d2ebc5}{maj\+Joueur}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui met à jour les coordonnées du personnage en fonction de la touche entrée par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ab895592832efa18c8b7f39713babded0}{charge\+Musique}} (char filename\mbox{[}200\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui va charger et jouer une musique à l\textquotesingle{}infini. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ac5924fe6394a40306244a488967fece0}{libere\+Musique}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va libérer une musique. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a137856fff0a76bfb81835abf46f8f75c}{charge\+Son}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va charger un son. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ab8dcbc5874cd64c05642bb454d5432fc}{libere\+Son}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va libérer un son. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a9d35592ef0a2525ec29ff3881713c190}{joue\+Son}} (int type)
+\begin{DoxyCompactList}\small\item\em Fonction qui va jouer un son en fonction d\textquotesingle{}un évènement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$ \mbox{\hyperlink{prototypes_8h_ab77ab48961042a27f586d96efccdbe17}{recup\+Monstre}} (int nombre)
+\begin{DoxyCompactList}\small\item\em Fonction qui va récupérer le monstre à l\textquotesingle{}indice nombre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_ae7f71f9b2664f5bbfdc0cb82afe7e358}{recup\+Nombre\+Monstres}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va récuperer le nombre de monstres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_acd0ea2e15f667c4ff8aca9c0fc8a26ec}{reset\+Monstres}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va initialiser le nombre de monstre à 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a167a2ee8ead11b7b2b878525251e360c}{charge\+Sprite\+Monstre}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va charger le sprite du monstre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a7f69699da92c1a0da0ee5579b7c4d6a2}{libere\+Monstre}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va libérer le sprite des monstres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ab4eef24d1ad7153eccd6cfd9ebd9f275}{init\+Nouveau\+Monstre}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction qui va initialiser un nouveau monstre aux coordonnées données. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_afc54b28adf6396c9977f6e1798e772c2}{maj\+Monstre}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer les déplacements et collisions des monstres. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_ac37858649e413354438af5da58c1965a}{collision\+Monstre\+Joueur}} (\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$joueur, \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre)
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer les collisions entre un monstre et le héro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a4131b691243c80a4c8d5da6eb1d41d8a}{verif\+Sol}} (\mbox{\hyperlink{struct_personnage}{Personnage}} monstre)
+\begin{DoxyCompactList}\small\item\em Fonction qui va vérifier si le monstre est sur le sol. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_aa1142c07667e9ba1f3bfd81da88d2610}{dessine\+Monstre}} (\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre)
+\begin{DoxyCompactList}\small\item\em Fonction qui va dessiner le monstre sur notre rendu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_aedc3b57a4ff83cb54f14b42d75e5475d}{recup\+Valeur\+Tile}} (int y, int x)
+\begin{DoxyCompactList}\small\item\em Fonction qui va retourner la valeur d\textquotesingle{}une tile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a96cd0a577f806bffe9cd0795f77b5b3f}{collision\+\_\+map\+\_\+monstre}} (\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre)
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer les collisions entre le monstre et la map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a0788ca06a161bf4ca20d44b2378ad846}{tuer\+Joueur}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer la mort du héro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a60c0d690e3b3a64e741ceb5c860edd78}{recup\+Item}} (int item\+Number)
+\begin{DoxyCompactList}\small\item\em Met à jour les compteurs de pièces et de vies en fonction des power-\/up (tiles spéciales) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a35cfdf41ae032f5f1532961c2880faa3}{reset\+Checkpoint}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui remet le checkpoint du joueur à 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a3c2426d31fad5d72096cd8610bc2b3af}{recup\+Statut\+Menu}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui renvoi 0 si on est en jeu et 1 si on est dans un menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_aea8c06b46bf819121d301be6f73b9e75}{recup\+Type\+Menu}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui renvoi le type de menu actuel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ab64dbeb7003ac501878862143e8f6a14}{init\+Type\+Menu}} (int valeur, int type)
+\begin{DoxyCompactList}\small\item\em Fonction qui définit si on est dans un menu et quel type de menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_aeb312566d0f594e6772d6e92049f5069}{init\+Menus}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui charge l\textquotesingle{}image du menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ae8934389b8c49582a7b8776295332f68}{libere\+Menus}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui libère l\textquotesingle{}image du menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a6ae3badf360d2d2148cfc970c479049c}{maj\+Menu\+Principal}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les évênements du menu start. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a68e7bf49653633671d2a842ac0cd7db3}{maj\+Menu\+Pause}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les évênements du menu pause. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a47c278cbb5995ba5ba939cbffc25be36}{maj\+Menu\+Gameover}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les évênements du menu gameover. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a7481c7d77e20e8e8284ab51da8c0440e}{maj\+Menu\+Fin}} (\mbox{\hyperlink{struct_input}{Input}} $\ast$touche)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les évênements du menu de fin de partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ae44974e279fcd2f25ffabf75dd97334e}{dessine\+Menu\+Principal}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le menu start à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a7435cf2ca6682bdbd3f37e656723b0f6}{dessine\+Menu\+Pause}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le menu pause à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_a13795b191929e9b34e58e655447fd651}{dessine\+Menu\+Fin}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le menu de fin de partie à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{prototypes_8h_ac6b8260c5ba63b8330b55429b8f6ab82}{dessine\+Menu\+Gameover}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le menu de gameover. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{prototypes_8h_a60ed862b4d6ef7b710437ff3dbb63635}{test\+Verif\+Sol}} (\mbox{\hyperlink{struct_personnage}{Personnage}} monstre)
+\begin{DoxyCompactList}\small\item\em Test unitaire sur la fonction \mbox{\hyperlink{prototypes_8h_a4131b691243c80a4c8d5da6eb1d41d8a}{verif\+Sol()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ce fichier contient tous les prototypes des fonctions qui vont être utilisées dans le cadre de ce projet. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{prototypes_8h_a81f68e7aa08c6af251a48951480f1523}\label{prototypes_8h_a81f68e7aa08c6af251a48951480f1523}} 
+\index{prototypes.h@{prototypes.h}!afficheTexte@{afficheTexte}}
+\index{afficheTexte@{afficheTexte}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{afficheTexte()}{afficheTexte()}}
+{\footnotesize\ttfamily void affiche\+Texte (\begin{DoxyParamCaption}\item[{char $\ast$}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b,  }\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Dessine le texte sur le rendu pour des coordonnées et une couleur données. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em char} & $\ast$text Texte à charger \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & x Coordonnées en abscisse \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & y Coordonnées en ordonnée \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & r Une des valeurs pour la couleur rouge \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & g Une des valeurs pour la couleur verte \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & b Une des valeurs pour la couleur bleu \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & a Opacité\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a91d70a5caec7a2c705f54f08646df552}\label{prototypes_8h_a91d70a5caec7a2c705f54f08646df552}} 
+\index{prototypes.h@{prototypes.h}!changeNiveau@{changeNiveau}}
+\index{changeNiveau@{changeNiveau}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{changeNiveau()}{changeNiveau()}}
+{\footnotesize\ttfamily void change\+Niveau (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Change la valeur du niveau en cours. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur du niveau
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a057d96c992c791a140aadefd9f754968}\label{prototypes_8h_a057d96c992c791a140aadefd9f754968}} 
+\index{prototypes.h@{prototypes.h}!chargeImage@{chargeImage}}
+\index{chargeImage@{chargeImage}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargeImage()}{chargeImage()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ charge\+Image (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom }\end{DoxyParamCaption})}
+
+
+
+Charge une image de nom $\ast$nom. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em char} & $\ast$nom Chaine de caractères correspondant un nom de l\textquotesingle{}image à charger\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_affa6af5f27e8986e5ca132cccfd6e0fe}\label{prototypes_8h_affa6af5f27e8986e5ca132cccfd6e0fe}} 
+\index{prototypes.h@{prototypes.h}!chargeJeu@{chargeJeu}}
+\index{chargeJeu@{chargeJeu}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargeJeu()}{chargeJeu()}}
+{\footnotesize\ttfamily void charge\+Jeu (\begin{DoxyParamCaption}\item[{int}]{pause\+Menu }\end{DoxyParamCaption})}
+
+
+
+Affiche à l\textquotesingle{}écran les différentes interfaces graphiques du jeu. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em int} & pause\+Menu ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ab240c41e87676659bb15e27a25dd4bd2}\label{prototypes_8h_ab240c41e87676659bb15e27a25dd4bd2}} 
+\index{prototypes.h@{prototypes.h}!chargeMap@{chargeMap}}
+\index{chargeMap@{chargeMap}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargeMap()}{chargeMap()}}
+{\footnotesize\ttfamily void charge\+Map (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom }\end{DoxyParamCaption})}
+
+
+
+Lis le fichier texte et stocke la map dans des matrices pour pouvoir réutiliser facilement les coordonnées ensuite. 
+
+param\mbox{[}in\mbox{]} char $\ast$nom Nom de la map à modéliser
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ae9ce4316681f06f1ce691d9ba31c15db}\label{prototypes_8h_ae9ce4316681f06f1ce691d9ba31c15db}} 
+\index{prototypes.h@{prototypes.h}!chargementJeu@{chargementJeu}}
+\index{chargementJeu@{chargementJeu}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargementJeu()}{chargementJeu()}}
+{\footnotesize\ttfamily void chargement\+Jeu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+S\textquotesingle{}occupe de charger le jeu, c\textquotesingle{}est-\/à-\/dire la map et le sprite du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ab895592832efa18c8b7f39713babded0}\label{prototypes_8h_ab895592832efa18c8b7f39713babded0}} 
+\index{prototypes.h@{prototypes.h}!chargeMusique@{chargeMusique}}
+\index{chargeMusique@{chargeMusique}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargeMusique()}{chargeMusique()}}
+{\footnotesize\ttfamily void charge\+Musique (\begin{DoxyParamCaption}\item[{char}]{filename\mbox{[}200\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va charger et jouer une musique à l\textquotesingle{}infini. 
+
+param\mbox{[}in\mbox{]} char filename\mbox{[}200\mbox{]} nom du fichier de la musique
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ab7119f3953730414181d710d2b4590ac}\label{prototypes_8h_ab7119f3953730414181d710d2b4590ac}} 
+\index{prototypes.h@{prototypes.h}!chargeNiveau@{chargeNiveau}}
+\index{chargeNiveau@{chargeNiveau}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargeNiveau()}{chargeNiveau()}}
+{\footnotesize\ttfamily void charge\+Niveau (\begin{DoxyParamCaption}\item[{int}]{niveau }\end{DoxyParamCaption})}
+
+
+
+Charge une nouvelle map en nettoyant la mémoire qui est occupée à ce moment précis. 
+
+param\mbox{[}in\mbox{]} int niveau niveau choisi
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a4252402920f8412e60a57d9b13bdf2e3}\label{prototypes_8h_a4252402920f8412e60a57d9b13bdf2e3}} 
+\index{prototypes.h@{prototypes.h}!chargePolice@{chargePolice}}
+\index{chargePolice@{chargePolice}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargePolice()}{chargePolice()}}
+{\footnotesize\ttfamily void charge\+Police (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+On charge du texte à l\textquotesingle{}aide de SDL\+\_\+\+TTF dans une taille et une police spécifiée. 
+
+param\mbox{[}in\mbox{]} char $\ast$ nom Chaine à charger param\mbox{[}in\mbox{]} int taille Taille du texte à charger
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a137856fff0a76bfb81835abf46f8f75c}\label{prototypes_8h_a137856fff0a76bfb81835abf46f8f75c}} 
+\index{prototypes.h@{prototypes.h}!chargeSon@{chargeSon}}
+\index{chargeSon@{chargeSon}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargeSon()}{chargeSon()}}
+{\footnotesize\ttfamily void charge\+Son (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va charger un son. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a167a2ee8ead11b7b2b878525251e360c}\label{prototypes_8h_a167a2ee8ead11b7b2b878525251e360c}} 
+\index{prototypes.h@{prototypes.h}!chargeSpriteMonstre@{chargeSpriteMonstre}}
+\index{chargeSpriteMonstre@{chargeSpriteMonstre}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{chargeSpriteMonstre()}{chargeSpriteMonstre()}}
+{\footnotesize\ttfamily void charge\+Sprite\+Monstre (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va charger le sprite du monstre. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a96cd0a577f806bffe9cd0795f77b5b3f}\label{prototypes_8h_a96cd0a577f806bffe9cd0795f77b5b3f}} 
+\index{prototypes.h@{prototypes.h}!collision\_map\_monstre@{collision\_map\_monstre}}
+\index{collision\_map\_monstre@{collision\_map\_monstre}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{collision\_map\_monstre()}{collision\_map\_monstre()}}
+{\footnotesize\ttfamily void collision\+\_\+map\+\_\+monstre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$}]{monstre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer les collisions entre le monstre et la map. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre objet monstre
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ac37858649e413354438af5da58c1965a}\label{prototypes_8h_ac37858649e413354438af5da58c1965a}} 
+\index{prototypes.h@{prototypes.h}!collisionMonstreJoueur@{collisionMonstreJoueur}}
+\index{collisionMonstreJoueur@{collisionMonstreJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{collisionMonstreJoueur()}{collisionMonstreJoueur()}}
+{\footnotesize\ttfamily int collision\+Monstre\+Joueur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$}]{joueur,  }\item[{\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$}]{monstre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer les collisions entre un monstre et le héro. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$joueur objet héro param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre objet monstre
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a278a2ffbb995f7837d4970a4d7435b63}\label{prototypes_8h_a278a2ffbb995f7837d4970a4d7435b63}} 
+\index{prototypes.h@{prototypes.h}!delay@{delay}}
+\index{delay@{delay}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void delay (\begin{DoxyParamCaption}\item[{unsigned int}]{frame\+Limit }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer les FPS pour laisser respirer le processeur de la machine. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em unsigned} & int frame\+Limit ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a4769544504a547bb1ad95ed79882bae8}\label{prototypes_8h_a4769544504a547bb1ad95ed79882bae8}} 
+\index{prototypes.h@{prototypes.h}!dessineHUD@{dessineHUD}}
+\index{dessineHUD@{dessineHUD}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineHUD()}{dessineHUD()}}
+{\footnotesize\ttfamily void dessine\+HUD (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Dessine les compteurs de vie et de pièces sur le rendu. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aa5ff9b0eb001981fb81c6b6a8ad437d4}\label{prototypes_8h_aa5ff9b0eb001981fb81c6b6a8ad437d4}} 
+\index{prototypes.h@{prototypes.h}!dessineImage@{dessineImage}}
+\index{dessineImage@{dessineImage}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineImage()}{dessineImage()}}
+{\footnotesize\ttfamily void dessine\+Image (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{image,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Dessine une image en fonction des paramètres passés en paramètres. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em SDL\+\_\+\+Texture} & $\ast$image Une image \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & x Coordonnées en abscisses (coin en haut à gauche de l\textquotesingle{}image) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & y Coordonnées en ordonnée (coin en haut à gauche de l\textquotesingle{}image)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_abd7f639e120c78780a1046b61e98f28e}\label{prototypes_8h_abd7f639e120c78780a1046b61e98f28e}} 
+\index{prototypes.h@{prototypes.h}!dessineJoueur@{dessineJoueur}}
+\index{dessineJoueur@{dessineJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineJoueur()}{dessineJoueur()}}
+{\footnotesize\ttfamily void dessine\+Joueur (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Dessine le héros aux coordonnées récupérées dans la fonction. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_af4cf0f3db3ba2199653fa0d7f203a108}\label{prototypes_8h_af4cf0f3db3ba2199653fa0d7f203a108}} 
+\index{prototypes.h@{prototypes.h}!dessineMap@{dessineMap}}
+\index{dessineMap@{dessineMap}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineMap()}{dessineMap()}}
+{\footnotesize\ttfamily void dessine\+Map (\begin{DoxyParamCaption}\item[{int}]{couche }\end{DoxyParamCaption})}
+
+
+
+Dessine la map sur un rendu en récupérant les coordonnées de la matrice pour une couche donnée. 
+
+param\mbox{[}in\mbox{]} int couche Nom de la couche à modéliser
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a13795b191929e9b34e58e655447fd651}\label{prototypes_8h_a13795b191929e9b34e58e655447fd651}} 
+\index{prototypes.h@{prototypes.h}!dessineMenuFin@{dessineMenuFin}}
+\index{dessineMenuFin@{dessineMenuFin}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineMenuFin()}{dessineMenuFin()}}
+{\footnotesize\ttfamily void dessine\+Menu\+Fin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine le menu de fin de partie à l\textquotesingle{}écran. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ac6b8260c5ba63b8330b55429b8f6ab82}\label{prototypes_8h_ac6b8260c5ba63b8330b55429b8f6ab82}} 
+\index{prototypes.h@{prototypes.h}!dessineMenuGameover@{dessineMenuGameover}}
+\index{dessineMenuGameover@{dessineMenuGameover}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineMenuGameover()}{dessineMenuGameover()}}
+{\footnotesize\ttfamily void dessine\+Menu\+Gameover (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine le menu de gameover. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a7435cf2ca6682bdbd3f37e656723b0f6}\label{prototypes_8h_a7435cf2ca6682bdbd3f37e656723b0f6}} 
+\index{prototypes.h@{prototypes.h}!dessineMenuPause@{dessineMenuPause}}
+\index{dessineMenuPause@{dessineMenuPause}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineMenuPause()}{dessineMenuPause()}}
+{\footnotesize\ttfamily void dessine\+Menu\+Pause (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine le menu pause à l\textquotesingle{}écran. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ae44974e279fcd2f25ffabf75dd97334e}\label{prototypes_8h_ae44974e279fcd2f25ffabf75dd97334e}} 
+\index{prototypes.h@{prototypes.h}!dessineMenuPrincipal@{dessineMenuPrincipal}}
+\index{dessineMenuPrincipal@{dessineMenuPrincipal}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineMenuPrincipal()}{dessineMenuPrincipal()}}
+{\footnotesize\ttfamily void dessine\+Menu\+Principal (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine le menu start à l\textquotesingle{}écran. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aa1142c07667e9ba1f3bfd81da88d2610}\label{prototypes_8h_aa1142c07667e9ba1f3bfd81da88d2610}} 
+\index{prototypes.h@{prototypes.h}!dessineMonstre@{dessineMonstre}}
+\index{dessineMonstre@{dessineMonstre}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineMonstre()}{dessineMonstre()}}
+{\footnotesize\ttfamily void dessine\+Monstre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$}]{monstre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va dessiner le monstre sur notre rendu. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre objet monstre
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aab41cf66613979032cf7d630d4bd8ab6}\label{prototypes_8h_aab41cf66613979032cf7d630d4bd8ab6}} 
+\index{prototypes.h@{prototypes.h}!dessineTile@{dessineTile}}
+\index{dessineTile@{dessineTile}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{dessineTile()}{dessineTile()}}
+{\footnotesize\ttfamily void dessine\+Tile (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{image,  }\item[{int}]{destx,  }\item[{int}]{desty,  }\item[{int}]{srcx,  }\item[{int}]{srcy }\end{DoxyParamCaption})}
+
+
+
+charge une image dans un rectangle dont les coordonnées sont passées en paramètres 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em SDL\+\_\+\+Texture} & $\ast$image l\textquotesingle{}image à charger \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & destx coordonnées x de la destination \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & desty coordonnées y de la destination \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & srcx coordonnées x de la source \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & srcy coordonnées y de la source\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_afb5ce2788220041519d643b6e7737419}\label{prototypes_8h_afb5ce2788220041519d643b6e7737419}} 
+\index{prototypes.h@{prototypes.h}!fermeturePolice@{fermeturePolice}}
+\index{fermeturePolice@{fermeturePolice}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{fermeturePolice()}{fermeturePolice()}}
+{\footnotesize\ttfamily void fermeture\+Police (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Libère la police proprement. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_adf1d8984fda4ff8744c8225cc304b538}\label{prototypes_8h_adf1d8984fda4ff8744c8225cc304b538}} 
+\index{prototypes.h@{prototypes.h}!gestionTouches@{gestionTouches}}
+\index{gestionTouches@{gestionTouches}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{gestionTouches()}{gestionTouches()}}
+{\footnotesize\ttfamily void gestion\+Touches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Appelle la fonction \mbox{\hyperlink{prototypes_8h_a8151adaa507a8c5b649f583f00bf61fd}{recup\+Touche()}} 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche Une entrée ~\newline
+
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ac610db9b553925b3fd200b82c6b5d505}\label{prototypes_8h_ac610db9b553925b3fd200b82c6b5d505}} 
+\index{prototypes.h@{prototypes.h}!getBackground@{getBackground}}
+\index{getBackground@{getBackground}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{getBackground()}{getBackground()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ get\+Background (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère la texture background. 
+
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a8c3ce793e9c1aa17f38ac897502e5a3a}\label{prototypes_8h_a8c3ce793e9c1aa17f38ac897502e5a3a}} 
+\index{prototypes.h@{prototypes.h}!init@{init}}
+\index{init@{init}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{char $\ast$}]{title }\end{DoxyParamCaption})}
+
+
+
+Initialisation globale des outils SDL. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em char} & $\ast$titre Nom de la fenêtre à générer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a7b4fbf028717ec7ea28d970c23e041b3}\label{prototypes_8h_a7b4fbf028717ec7ea28d970c23e041b3}} 
+\index{prototypes.h@{prototypes.h}!initDepartMapX@{initDepartMapX}}
+\index{initDepartMapX@{initDepartMapX}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initDepartMapX()}{initDepartMapX()}}
+{\footnotesize\ttfamily void init\+Depart\+MapX (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise les coordonnées de départ en abscisse sur la map. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur de la coordonnée
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aee09450cf06b3a228f85a7a616387174}\label{prototypes_8h_aee09450cf06b3a228f85a7a616387174}} 
+\index{prototypes.h@{prototypes.h}!initDepartMapY@{initDepartMapY}}
+\index{initDepartMapY@{initDepartMapY}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initDepartMapY()}{initDepartMapY()}}
+{\footnotesize\ttfamily void init\+Depart\+MapY (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise les coordonnées de départ en ordonnée sur la map. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur de la coordonnée
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a4743bbc7f02f675340a494482e6c8d53}\label{prototypes_8h_a4743bbc7f02f675340a494482e6c8d53}} 
+\index{prototypes.h@{prototypes.h}!initHUD@{initHUD}}
+\index{initHUD@{initHUD}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initHUD()}{initHUD()}}
+{\footnotesize\ttfamily void init\+HUD (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Charge les images pour les pièces et pour la vie. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a1f82ff6c274b947b154a1c67a13f8b13}\label{prototypes_8h_a1f82ff6c274b947b154a1c67a13f8b13}} 
+\index{prototypes.h@{prototypes.h}!initJoueur@{initJoueur}}
+\index{initJoueur@{initJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initJoueur()}{initJoueur()}}
+{\footnotesize\ttfamily void init\+Joueur (\begin{DoxyParamCaption}\item[{int}]{nouveau\+Niveau }\end{DoxyParamCaption})}
+
+
+
+Initialise le héros dans un niveau donné 
+
+param\mbox{[}in\mbox{]} int nouveau\+Niveau Valeur du niveau dans laquelle il faut charger le héros
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ad929f8ccf334a1f20769da83d12f90f8}\label{prototypes_8h_ad929f8ccf334a1f20769da83d12f90f8}} 
+\index{prototypes.h@{prototypes.h}!initJoueurX@{initJoueurX}}
+\index{initJoueurX@{initJoueurX}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initJoueurX()}{initJoueurX()}}
+{\footnotesize\ttfamily void init\+JoueurX (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise les coordonnées en abscisse du héros. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur x
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aab01456feb2e384c6ec1c2de1bb24af0}\label{prototypes_8h_aab01456feb2e384c6ec1c2de1bb24af0}} 
+\index{prototypes.h@{prototypes.h}!initJoueurY@{initJoueurY}}
+\index{initJoueurY@{initJoueurY}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initJoueurY()}{initJoueurY()}}
+{\footnotesize\ttfamily void init\+JoueurY (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise les coordonnées en ordonnée du héros. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur y
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ae4ffa0d30973eaa964a8238fb2b47e98}\label{prototypes_8h_ae4ffa0d30973eaa964a8238fb2b47e98}} 
+\index{prototypes.h@{prototypes.h}!initMaps@{initMaps}}
+\index{initMaps@{initMaps}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initMaps()}{initMaps()}}
+{\footnotesize\ttfamily void init\+Maps (\begin{DoxyParamCaption}\item[{int}]{niveau }\end{DoxyParamCaption})}
+
+
+
+Charge les images de fond pour un niveau donné. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em int} & niveau entier lié à un niveau (1, 2, 3 etc...)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aeb312566d0f594e6772d6e92049f5069}\label{prototypes_8h_aeb312566d0f594e6772d6e92049f5069}} 
+\index{prototypes.h@{prototypes.h}!initMenus@{initMenus}}
+\index{initMenus@{initMenus}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initMenus()}{initMenus()}}
+{\footnotesize\ttfamily void init\+Menus (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui charge l\textquotesingle{}image du menu. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a3f77726f9f9d5270145d3f198902fcb0}\label{prototypes_8h_a3f77726f9f9d5270145d3f198902fcb0}} 
+\index{prototypes.h@{prototypes.h}!initNombreDePieces@{initNombreDePieces}}
+\index{initNombreDePieces@{initNombreDePieces}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initNombreDePieces()}{initNombreDePieces()}}
+{\footnotesize\ttfamily void init\+Nombre\+De\+Pieces (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Initialise le nombre de piece(s) 
+
+param\mbox{[}in\mbox{]} int valeur Nombre de pièce(s)
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a88157b320cc069facb592880887a6e46}\label{prototypes_8h_a88157b320cc069facb592880887a6e46}} 
+\index{prototypes.h@{prototypes.h}!initNombreDeVies@{initNombreDeVies}}
+\index{initNombreDeVies@{initNombreDeVies}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initNombreDeVies()}{initNombreDeVies()}}
+{\footnotesize\ttfamily void init\+Nombre\+De\+Vies (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Défini le nombre de vie(s) 
+
+param\mbox{[}in\mbox{]} int valeur Nombre de vie(s)
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ab4eef24d1ad7153eccd6cfd9ebd9f275}\label{prototypes_8h_ab4eef24d1ad7153eccd6cfd9ebd9f275}} 
+\index{prototypes.h@{prototypes.h}!initNouveauMonstre@{initNouveauMonstre}}
+\index{initNouveauMonstre@{initNouveauMonstre}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initNouveauMonstre()}{initNouveauMonstre()}}
+{\footnotesize\ttfamily void init\+Nouveau\+Monstre (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va initialiser un nouveau monstre aux coordonnées données. 
+
+param\mbox{[}in\mbox{]} int x coordonnée x param\mbox{[}in\mbox{]} int y coordonnée y
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a1f95054bbfda886cb58c81fff2c547ae}\label{prototypes_8h_a1f95054bbfda886cb58c81fff2c547ae}} 
+\index{prototypes.h@{prototypes.h}!initSpriteJoueur@{initSpriteJoueur}}
+\index{initSpriteJoueur@{initSpriteJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initSpriteJoueur()}{initSpriteJoueur()}}
+{\footnotesize\ttfamily void init\+Sprite\+Joueur (\begin{DoxyParamCaption}\item[{int}]{hero }\end{DoxyParamCaption})}
+
+
+
+Charge le spritesheet du héros au début du level. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ab64dbeb7003ac501878862143e8f6a14}\label{prototypes_8h_ab64dbeb7003ac501878862143e8f6a14}} 
+\index{prototypes.h@{prototypes.h}!initTypeMenu@{initTypeMenu}}
+\index{initTypeMenu@{initTypeMenu}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{initTypeMenu()}{initTypeMenu()}}
+{\footnotesize\ttfamily void init\+Type\+Menu (\begin{DoxyParamCaption}\item[{int}]{valeur,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Fonction qui définit si on est dans un menu et quel type de menu. 
+
+param\mbox{[}in\mbox{]} int valeur valeur correspond à jeu ou menu param\mbox{[}in\mbox{]} int type valeur correspondant au menu start ou menu pause
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a9d35592ef0a2525ec29ff3881713c190}\label{prototypes_8h_a9d35592ef0a2525ec29ff3881713c190}} 
+\index{prototypes.h@{prototypes.h}!joueSon@{joueSon}}
+\index{joueSon@{joueSon}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{joueSon()}{joueSon()}}
+{\footnotesize\ttfamily void joue\+Son (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va jouer un son en fonction d\textquotesingle{}un évènement. 
+
+param\mbox{[}in\mbox{]} int type type d\textquotesingle{}évènement
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ae8934389b8c49582a7b8776295332f68}\label{prototypes_8h_ae8934389b8c49582a7b8776295332f68}} 
+\index{prototypes.h@{prototypes.h}!libereMenus@{libereMenus}}
+\index{libereMenus@{libereMenus}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{libereMenus()}{libereMenus()}}
+{\footnotesize\ttfamily void libere\+Menus (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui libère l\textquotesingle{}image du menu. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a7f69699da92c1a0da0ee5579b7c4d6a2}\label{prototypes_8h_a7f69699da92c1a0da0ee5579b7c4d6a2}} 
+\index{prototypes.h@{prototypes.h}!libereMonstre@{libereMonstre}}
+\index{libereMonstre@{libereMonstre}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{libereMonstre()}{libereMonstre()}}
+{\footnotesize\ttfamily void libere\+Monstre (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va libérer le sprite des monstres. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ac5924fe6394a40306244a488967fece0}\label{prototypes_8h_ac5924fe6394a40306244a488967fece0}} 
+\index{prototypes.h@{prototypes.h}!libereMusique@{libereMusique}}
+\index{libereMusique@{libereMusique}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{libereMusique()}{libereMusique()}}
+{\footnotesize\ttfamily void libere\+Musique (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va libérer une musique. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ab8dcbc5874cd64c05642bb454d5432fc}\label{prototypes_8h_ab8dcbc5874cd64c05642bb454d5432fc}} 
+\index{prototypes.h@{prototypes.h}!libereSon@{libereSon}}
+\index{libereSon@{libereSon}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{libereSon()}{libereSon()}}
+{\footnotesize\ttfamily void libere\+Son (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va libérer un son. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ae704c00c46f7dbf74de149aa27d2ebc5}\label{prototypes_8h_ae704c00c46f7dbf74de149aa27d2ebc5}} 
+\index{prototypes.h@{prototypes.h}!majJoueur@{majJoueur}}
+\index{majJoueur@{majJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{majJoueur()}{majJoueur()}}
+{\footnotesize\ttfamily void maj\+Joueur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui met à jour les coordonnées du personnage en fonction de la touche entrée par l\textquotesingle{}utilisateur. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche Touche entrée par l\textquotesingle{}utilisateur
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a7481c7d77e20e8e8284ab51da8c0440e}\label{prototypes_8h_a7481c7d77e20e8e8284ab51da8c0440e}} 
+\index{prototypes.h@{prototypes.h}!majMenuFin@{majMenuFin}}
+\index{majMenuFin@{majMenuFin}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{majMenuFin()}{majMenuFin()}}
+{\footnotesize\ttfamily void maj\+Menu\+Fin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les évênements du menu de fin de partie. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a47c278cbb5995ba5ba939cbffc25be36}\label{prototypes_8h_a47c278cbb5995ba5ba939cbffc25be36}} 
+\index{prototypes.h@{prototypes.h}!majMenuGameover@{majMenuGameover}}
+\index{majMenuGameover@{majMenuGameover}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{majMenuGameover()}{majMenuGameover()}}
+{\footnotesize\ttfamily void maj\+Menu\+Gameover (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les évênements du menu gameover. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a68e7bf49653633671d2a842ac0cd7db3}\label{prototypes_8h_a68e7bf49653633671d2a842ac0cd7db3}} 
+\index{prototypes.h@{prototypes.h}!majMenuPause@{majMenuPause}}
+\index{majMenuPause@{majMenuPause}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{majMenuPause()}{majMenuPause()}}
+{\footnotesize\ttfamily void maj\+Menu\+Pause (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les évênements du menu pause. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a6ae3badf360d2d2148cfc970c479049c}\label{prototypes_8h_a6ae3badf360d2d2148cfc970c479049c}} 
+\index{prototypes.h@{prototypes.h}!majMenuPrincipal@{majMenuPrincipal}}
+\index{majMenuPrincipal@{majMenuPrincipal}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{majMenuPrincipal()}{majMenuPrincipal()}}
+{\footnotesize\ttfamily void maj\+Menu\+Principal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les évênements du menu start. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_afc54b28adf6396c9977f6e1798e772c2}\label{prototypes_8h_afc54b28adf6396c9977f6e1798e772c2}} 
+\index{prototypes.h@{prototypes.h}!majMonstre@{majMonstre}}
+\index{majMonstre@{majMonstre}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{majMonstre()}{majMonstre()}}
+{\footnotesize\ttfamily void maj\+Monstre (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer les déplacements et collisions des monstres. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a269af56aed64fd6b2197185bdd21cc92}\label{prototypes_8h_a269af56aed64fd6b2197185bdd21cc92}} 
+\index{prototypes.h@{prototypes.h}!mapCollision@{mapCollision}}
+\index{mapCollision@{mapCollision}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{mapCollision()}{mapCollision()}}
+{\footnotesize\ttfamily void map\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$}]{personnage }\end{DoxyParamCaption})}
+
+
+
+Gère les collisions avec les différentes textures de la map. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$personnage un personnage (texture animée)
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ab4af1284fd7db54bc3f65596c7be4d41}\label{prototypes_8h_ab4af1284fd7db54bc3f65596c7be4d41}} 
+\index{prototypes.h@{prototypes.h}!nettoyageAll@{nettoyageAll}}
+\index{nettoyageAll@{nettoyageAll}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{nettoyageAll()}{nettoyageAll()}}
+{\footnotesize\ttfamily void nettoyage\+All (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+La fonction quitte tous les outils proprement en libérant la mémoire. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a46c3c5c517076bb1a9d915ecfed78373}\label{prototypes_8h_a46c3c5c517076bb1a9d915ecfed78373}} 
+\index{prototypes.h@{prototypes.h}!nettoyageHUD@{nettoyageHUD}}
+\index{nettoyageHUD@{nettoyageHUD}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{nettoyageHUD()}{nettoyageHUD()}}
+{\footnotesize\ttfamily void nettoyage\+HUD (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Nettoie et libère proprement les textures. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a3e1f2fd7f6d738f1b6dbe36243f8ced1}\label{prototypes_8h_a3e1f2fd7f6d738f1b6dbe36243f8ced1}} 
+\index{prototypes.h@{prototypes.h}!nettoyageJoueur@{nettoyageJoueur}}
+\index{nettoyageJoueur@{nettoyageJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{nettoyageJoueur()}{nettoyageJoueur()}}
+{\footnotesize\ttfamily void nettoyage\+Joueur (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Vide la mémoire liée au sprite proprement. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a5f583cd8124b9c010528e3bd594bbcaf}\label{prototypes_8h_a5f583cd8124b9c010528e3bd594bbcaf}} 
+\index{prototypes.h@{prototypes.h}!nettoyageMaps@{nettoyageMaps}}
+\index{nettoyageMaps@{nettoyageMaps}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{nettoyageMaps()}{nettoyageMaps()}}
+{\footnotesize\ttfamily void nettoyage\+Maps (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Nettoie et libère proprement le background et le tileset. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a54593d69c7671b93c93cd2b9f1415db6}\label{prototypes_8h_a54593d69c7671b93c93cd2b9f1415db6}} 
+\index{prototypes.h@{prototypes.h}!recupDebutMapX@{recupDebutMapX}}
+\index{recupDebutMapX@{recupDebutMapX}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupDebutMapX()}{recupDebutMapX()}}
+{\footnotesize\ttfamily int recup\+Debut\+MapX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en abscisse du début de la map. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a5b929f89ce8eefb984575c1688cfade4}\label{prototypes_8h_a5b929f89ce8eefb984575c1688cfade4}} 
+\index{prototypes.h@{prototypes.h}!recupDebutMapY@{recupDebutMapY}}
+\index{recupDebutMapY@{recupDebutMapY}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupDebutMapY()}{recupDebutMapY()}}
+{\footnotesize\ttfamily int recup\+Debut\+MapY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en ordonnée du début de la map. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ad77db6bc8ad01965056aa9398af4ef2e}\label{prototypes_8h_ad77db6bc8ad01965056aa9398af4ef2e}} 
+\index{prototypes.h@{prototypes.h}!recupFinMapX@{recupFinMapX}}
+\index{recupFinMapX@{recupFinMapX}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupFinMapX()}{recupFinMapX()}}
+{\footnotesize\ttfamily int recup\+Fin\+MapX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en abscisse de la fin de la map. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a8b720fcd2523ffd234ab46e437fe67f4}\label{prototypes_8h_a8b720fcd2523ffd234ab46e437fe67f4}} 
+\index{prototypes.h@{prototypes.h}!recupFinMapY@{recupFinMapY}}
+\index{recupFinMapY@{recupFinMapY}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupFinMapY()}{recupFinMapY()}}
+{\footnotesize\ttfamily int recup\+Fin\+MapY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en ordonnée de la fin de la map. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a60c0d690e3b3a64e741ceb5c860edd78}\label{prototypes_8h_a60c0d690e3b3a64e741ceb5c860edd78}} 
+\index{prototypes.h@{prototypes.h}!recupItem@{recupItem}}
+\index{recupItem@{recupItem}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupItem()}{recupItem()}}
+{\footnotesize\ttfamily void recup\+Item (\begin{DoxyParamCaption}\item[{int}]{item\+Number }\end{DoxyParamCaption})}
+
+
+
+Met à jour les compteurs de pièces et de vies en fonction des power-\/up (tiles spéciales) 
+
+param\mbox{[}in\mbox{]} int item\+Number Valeur de l\textquotesingle{}item
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_abbc2423b650bd151a25c46d256f2ba0a}\label{prototypes_8h_abbc2423b650bd151a25c46d256f2ba0a}} 
+\index{prototypes.h@{prototypes.h}!recupJoueur@{recupJoueur}}
+\index{recupJoueur@{recupJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupJoueur()}{recupJoueur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_personnage}{Personnage}}$\ast$ recup\+Joueur (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère le \mbox{\hyperlink{struct_personnage}{Personnage}} de player. 
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_personnage}{Personnage}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a66ecbd7cd424068e192bf660ca7577a8}\label{prototypes_8h_a66ecbd7cd424068e192bf660ca7577a8}} 
+\index{prototypes.h@{prototypes.h}!recupJoueurX@{recupJoueurX}}
+\index{recupJoueurX@{recupJoueurX}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupJoueurX()}{recupJoueurX()}}
+{\footnotesize\ttfamily int recup\+JoueurX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en abscisse du héros. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_afee5fe560bf506918ee1bab46d6f1d02}\label{prototypes_8h_afee5fe560bf506918ee1bab46d6f1d02}} 
+\index{prototypes.h@{prototypes.h}!recupJoueurY@{recupJoueurY}}
+\index{recupJoueurY@{recupJoueurY}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupJoueurY()}{recupJoueurY()}}
+{\footnotesize\ttfamily int recup\+JoueurY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées en ordonnée du héros. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ab77ab48961042a27f586d96efccdbe17}\label{prototypes_8h_ab77ab48961042a27f586d96efccdbe17}} 
+\index{prototypes.h@{prototypes.h}!recupMonstre@{recupMonstre}}
+\index{recupMonstre@{recupMonstre}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupMonstre()}{recupMonstre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_personnage}{Personnage}}$\ast$ recup\+Monstre (\begin{DoxyParamCaption}\item[{int}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va récupérer le monstre à l\textquotesingle{}indice nombre. 
+
+param\mbox{[}in\mbox{]} int nombre indice du monstre
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a022a27f356efe8beb481560a2a7fcdc0}\label{prototypes_8h_a022a27f356efe8beb481560a2a7fcdc0}} 
+\index{prototypes.h@{prototypes.h}!recupNiveau@{recupNiveau}}
+\index{recupNiveau@{recupNiveau}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupNiveau()}{recupNiveau()}}
+{\footnotesize\ttfamily int recup\+Niveau (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère l\textquotesingle{}entier lié au level. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aacca3f18ff5cab2ab676b4788e04a8ea}\label{prototypes_8h_aacca3f18ff5cab2ab676b4788e04a8ea}} 
+\index{prototypes.h@{prototypes.h}!recupNombreDePieces@{recupNombreDePieces}}
+\index{recupNombreDePieces@{recupNombreDePieces}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupNombreDePieces()}{recupNombreDePieces()}}
+{\footnotesize\ttfamily int recup\+Nombre\+De\+Pieces (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère le nombre de pièce(s) 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a974cbb87bcf524e2c1b9dab6f3849a33}\label{prototypes_8h_a974cbb87bcf524e2c1b9dab6f3849a33}} 
+\index{prototypes.h@{prototypes.h}!recupNombreDeVies@{recupNombreDeVies}}
+\index{recupNombreDeVies@{recupNombreDeVies}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupNombreDeVies()}{recupNombreDeVies()}}
+{\footnotesize\ttfamily int recup\+Nombre\+De\+Vies (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère le nombre de vie(s) 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ae7f71f9b2664f5bbfdc0cb82afe7e358}\label{prototypes_8h_ae7f71f9b2664f5bbfdc0cb82afe7e358}} 
+\index{prototypes.h@{prototypes.h}!recupNombreMonstres@{recupNombreMonstres}}
+\index{recupNombreMonstres@{recupNombreMonstres}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupNombreMonstres()}{recupNombreMonstres()}}
+{\footnotesize\ttfamily int recup\+Nombre\+Monstres (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va récuperer le nombre de monstres. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_afffccd83f070982a23a8eeb90872b71d}\label{prototypes_8h_afffccd83f070982a23a8eeb90872b71d}} 
+\index{prototypes.h@{prototypes.h}!recupPersoStartX@{recupPersoStartX}}
+\index{recupPersoStartX@{recupPersoStartX}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupPersoStartX()}{recupPersoStartX()}}
+{\footnotesize\ttfamily int recup\+Perso\+StartX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées de départ en abscisse du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ae834cb64ed45186570ea08e068cb9a95}\label{prototypes_8h_ae834cb64ed45186570ea08e068cb9a95}} 
+\index{prototypes.h@{prototypes.h}!recupPersoStartY@{recupPersoStartY}}
+\index{recupPersoStartY@{recupPersoStartY}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupPersoStartY()}{recupPersoStartY()}}
+{\footnotesize\ttfamily int recup\+Perso\+StartY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère les coordonnées de départ en ordonnée du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_ad32a83e14240bcaeff478bb967261d72}\label{prototypes_8h_ad32a83e14240bcaeff478bb967261d72}} 
+\index{prototypes.h@{prototypes.h}!recupRendu@{recupRendu}}
+\index{recupRendu@{recupRendu}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupRendu()}{recupRendu()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ recup\+Rendu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère un rendu. 
+
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Renderer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a3c2426d31fad5d72096cd8610bc2b3af}\label{prototypes_8h_a3c2426d31fad5d72096cd8610bc2b3af}} 
+\index{prototypes.h@{prototypes.h}!recupStatutMenu@{recupStatutMenu}}
+\index{recupStatutMenu@{recupStatutMenu}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupStatutMenu()}{recupStatutMenu()}}
+{\footnotesize\ttfamily int recup\+Statut\+Menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui renvoi 0 si on est en jeu et 1 si on est dans un menu. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a66dd606c759538b621a2361591d4b8c5}\label{prototypes_8h_a66dd606c759538b621a2361591d4b8c5}} 
+\index{prototypes.h@{prototypes.h}!recupTileset@{recupTileset}}
+\index{recupTileset@{recupTileset}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupTileset()}{recupTileset()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ recup\+Tileset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère le tile\+Set. 
+
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a8151adaa507a8c5b649f583f00bf61fd}\label{prototypes_8h_a8151adaa507a8c5b649f583f00bf61fd}} 
+\index{prototypes.h@{prototypes.h}!recupTouche@{recupTouche}}
+\index{recupTouche@{recupTouche}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupTouche()}{recupTouche()}}
+{\footnotesize\ttfamily void recup\+Touche (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_input}{Input}} $\ast$}]{touche }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer les touches du clavier, c\textquotesingle{}est-\/à-\/dire qu\textquotesingle{}elle va boucler sur chaque évènement qui pourra être traité par le jeu. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_input}{Input}} $\ast$touche une entrée ~\newline
+
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aea8c06b46bf819121d301be6f73b9e75}\label{prototypes_8h_aea8c06b46bf819121d301be6f73b9e75}} 
+\index{prototypes.h@{prototypes.h}!recupTypeMenu@{recupTypeMenu}}
+\index{recupTypeMenu@{recupTypeMenu}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupTypeMenu()}{recupTypeMenu()}}
+{\footnotesize\ttfamily int recup\+Type\+Menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui renvoi le type de menu actuel. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_aedc3b57a4ff83cb54f14b42d75e5475d}\label{prototypes_8h_aedc3b57a4ff83cb54f14b42d75e5475d}} 
+\index{prototypes.h@{prototypes.h}!recupValeurTile@{recupValeurTile}}
+\index{recupValeurTile@{recupValeurTile}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{recupValeurTile()}{recupValeurTile()}}
+{\footnotesize\ttfamily int recup\+Valeur\+Tile (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va retourner la valeur d\textquotesingle{}une tile. 
+
+param\mbox{[}in\mbox{]} int x coordonnée x param\mbox{[}in\mbox{]} int y coordonnée y
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a35cfdf41ae032f5f1532961c2880faa3}\label{prototypes_8h_a35cfdf41ae032f5f1532961c2880faa3}} 
+\index{prototypes.h@{prototypes.h}!resetCheckpoint@{resetCheckpoint}}
+\index{resetCheckpoint@{resetCheckpoint}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{resetCheckpoint()}{resetCheckpoint()}}
+{\footnotesize\ttfamily void reset\+Checkpoint (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remet le checkpoint du joueur à 0. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_acd0ea2e15f667c4ff8aca9c0fc8a26ec}\label{prototypes_8h_acd0ea2e15f667c4ff8aca9c0fc8a26ec}} 
+\index{prototypes.h@{prototypes.h}!resetMonstres@{resetMonstres}}
+\index{resetMonstres@{resetMonstres}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{resetMonstres()}{resetMonstres()}}
+{\footnotesize\ttfamily void reset\+Monstres (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va initialiser le nombre de monstre à 0. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a1694e8d0d1811f31bdd8243f13c5fc69}\label{prototypes_8h_a1694e8d0d1811f31bdd8243f13c5fc69}} 
+\index{prototypes.h@{prototypes.h}!scrollSurJoueur@{scrollSurJoueur}}
+\index{scrollSurJoueur@{scrollSurJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{scrollSurJoueur()}{scrollSurJoueur()}}
+{\footnotesize\ttfamily void scroll\+Sur\+Joueur (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du scrolling de la map, centré sur le héros, et adapté à la vitesse de ce dernier. 
+
+param\mbox{[}in\mbox{]} int valeur Valeur x
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a60ed862b4d6ef7b710437ff3dbb63635}\label{prototypes_8h_a60ed862b4d6ef7b710437ff3dbb63635}} 
+\index{prototypes.h@{prototypes.h}!testVerifSol@{testVerifSol}}
+\index{testVerifSol@{testVerifSol}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{testVerifSol()}{testVerifSol()}}
+{\footnotesize\ttfamily int test\+Verif\+Sol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_personnage}{Personnage}}}]{monstre }\end{DoxyParamCaption})}
+
+
+
+Test unitaire sur la fonction \mbox{\hyperlink{prototypes_8h_a4131b691243c80a4c8d5da6eb1d41d8a}{verif\+Sol()}} 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre objet monstre
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a0788ca06a161bf4ca20d44b2378ad846}\label{prototypes_8h_a0788ca06a161bf4ca20d44b2378ad846}} 
+\index{prototypes.h@{prototypes.h}!tuerJoueur@{tuerJoueur}}
+\index{tuerJoueur@{tuerJoueur}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{tuerJoueur()}{tuerJoueur()}}
+{\footnotesize\ttfamily void tuer\+Joueur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer la mort du héro. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{prototypes_8h_a4131b691243c80a4c8d5da6eb1d41d8a}\label{prototypes_8h_a4131b691243c80a4c8d5da6eb1d41d8a}} 
+\index{prototypes.h@{prototypes.h}!verifSol@{verifSol}}
+\index{verifSol@{verifSol}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{verifSol()}{verifSol()}}
+{\footnotesize\ttfamily int verif\+Sol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_personnage}{Personnage}}}]{monstre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va vérifier si le monstre est sur le sol. 
+
+param\mbox{[}in\mbox{]} \mbox{\hyperlink{struct_personnage}{Personnage}} $\ast$monstre objet monstre
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}

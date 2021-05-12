@@ -1,0 +1,211 @@
+\hypertarget{dessin_8c}{}\doxysection{Référence du fichier dessin.\+c}
+\label{dessin_8c}\index{dessin.c@{dessin.c}}
+
+
+S\textquotesingle{}occupe des fonctions graphiques du jeu.  
+
+
+{\ttfamily \#include \char`\"{}prototypes.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dessin_8c_affa6af5f27e8986e5ca132cccfd6e0fe}{charge\+Jeu}} (int pause\+Menu)
+\begin{DoxyCompactList}\small\item\em Affiche à l\textquotesingle{}écran les différentes interfaces graphiques du jeu. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{dessin_8c_a057d96c992c791a140aadefd9f754968}{charge\+Image}} (char $\ast$nom)
+\begin{DoxyCompactList}\small\item\em Charge une image de nom $\ast$nom. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dessin_8c_afb57e6ad2643e5a1d4d2257f8319b363}{dessine\+Image}} (SDL\+\_\+\+Texture $\ast$image, int x, int y)
+\begin{DoxyCompactList}\small\item\em Dessine une image en fonction des paramètres passés en paramètres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dessin_8c_a278a2ffbb995f7837d4970a4d7435b63}{delay}} (unsigned int frame\+Limit)
+\begin{DoxyCompactList}\small\item\em Fonction qui va gérer les FPS pour laisser respirer le processeur de la machine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dessin_8c_aab41cf66613979032cf7d630d4bd8ab6}{dessine\+Tile}} (SDL\+\_\+\+Texture $\ast$image, int destx, int desty, int srcx, int srcy)
+\begin{DoxyCompactList}\small\item\em charge une image dans un rectangle dont les coordonnées sont passées en paramètres \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dessin_8c_a4743bbc7f02f675340a494482e6c8d53}{init\+HUD}} (void)
+\begin{DoxyCompactList}\small\item\em Charge les images pour les pièces et pour la vie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dessin_8c_a46c3c5c517076bb1a9d915ecfed78373}{nettoyage\+HUD}} (void)
+\begin{DoxyCompactList}\small\item\em Nettoie et libère proprement les textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dessin_8c_a4769544504a547bb1ad95ed79882bae8}{dessine\+HUD}} (void)
+\begin{DoxyCompactList}\small\item\em Dessine les compteurs de vie et de pièces sur le rendu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dessin_8c_a7eff8a03dd3e3403b49d782b6c8fa43e}\label{dessin_8c_a7eff8a03dd3e3403b49d782b6c8fa43e}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries HUD\+\_\+vie}
+\item 
+\mbox{\Hypertarget{dessin_8c_aacb017ccb3ae840dc7cf8e10e1759210}\label{dessin_8c_aacb017ccb3ae840dc7cf8e10e1759210}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries HUD\+\_\+pieces}
+\item 
+\mbox{\Hypertarget{dessin_8c_a9b3c40763501fb5666a9a607aa5c5a68}\label{dessin_8c_a9b3c40763501fb5666a9a607aa5c5a68}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries HUD\+\_\+temps}
+\item 
+\mbox{\Hypertarget{dessin_8c_a645e4de1822ad95a04087d92de244a7a}\label{dessin_8c_a645e4de1822ad95a04087d92de244a7a}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries HUD\+\_\+record}
+\item 
+\mbox{\Hypertarget{dessin_8c_aaa7e2faaefcada5e1fa2e88d1de46832}\label{dessin_8c_aaa7e2faaefcada5e1fa2e88d1de46832}} 
+int {\bfseries record}
+\item 
+\mbox{\Hypertarget{dessin_8c_ae2c6087027bfdf561a2b766975b47ee8}\label{dessin_8c_ae2c6087027bfdf561a2b766975b47ee8}} 
+int {\bfseries timer}
+\item 
+\mbox{\Hypertarget{dessin_8c_a3b6a348cf9d20d9f3ae2985637af1bf2}\label{dessin_8c_a3b6a348cf9d20d9f3ae2985637af1bf2}} 
+int {\bfseries timer\+\_\+reset} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+S\textquotesingle{}occupe des fonctions graphiques du jeu. 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{dessin_8c_a057d96c992c791a140aadefd9f754968}\label{dessin_8c_a057d96c992c791a140aadefd9f754968}} 
+\index{dessin.c@{dessin.c}!chargeImage@{chargeImage}}
+\index{chargeImage@{chargeImage}!dessin.c@{dessin.c}}
+\doxysubsubsection{\texorpdfstring{chargeImage()}{chargeImage()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ charge\+Image (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom }\end{DoxyParamCaption})}
+
+
+
+Charge une image de nom $\ast$nom. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em char} & $\ast$nom Chaine de caractères correspondant un nom de l\textquotesingle{}image à charger\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dessin_8c_affa6af5f27e8986e5ca132cccfd6e0fe}\label{dessin_8c_affa6af5f27e8986e5ca132cccfd6e0fe}} 
+\index{dessin.c@{dessin.c}!chargeJeu@{chargeJeu}}
+\index{chargeJeu@{chargeJeu}!dessin.c@{dessin.c}}
+\doxysubsubsection{\texorpdfstring{chargeJeu()}{chargeJeu()}}
+{\footnotesize\ttfamily void charge\+Jeu (\begin{DoxyParamCaption}\item[{int}]{pause\+Menu }\end{DoxyParamCaption})}
+
+
+
+Affiche à l\textquotesingle{}écran les différentes interfaces graphiques du jeu. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em int} & pause\+Menu ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dessin_8c_a278a2ffbb995f7837d4970a4d7435b63}\label{dessin_8c_a278a2ffbb995f7837d4970a4d7435b63}} 
+\index{dessin.c@{dessin.c}!delay@{delay}}
+\index{delay@{delay}!dessin.c@{dessin.c}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void delay (\begin{DoxyParamCaption}\item[{unsigned int}]{frame\+Limit }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va gérer les FPS pour laisser respirer le processeur de la machine. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em unsigned} & int frame\+Limit ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dessin_8c_a4769544504a547bb1ad95ed79882bae8}\label{dessin_8c_a4769544504a547bb1ad95ed79882bae8}} 
+\index{dessin.c@{dessin.c}!dessineHUD@{dessineHUD}}
+\index{dessineHUD@{dessineHUD}!dessin.c@{dessin.c}}
+\doxysubsubsection{\texorpdfstring{dessineHUD()}{dessineHUD()}}
+{\footnotesize\ttfamily void dessine\+HUD (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Dessine les compteurs de vie et de pièces sur le rendu. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dessin_8c_afb57e6ad2643e5a1d4d2257f8319b363}\label{dessin_8c_afb57e6ad2643e5a1d4d2257f8319b363}} 
+\index{dessin.c@{dessin.c}!dessineImage@{dessineImage}}
+\index{dessineImage@{dessineImage}!dessin.c@{dessin.c}}
+\doxysubsubsection{\texorpdfstring{dessineImage()}{dessineImage()}}
+{\footnotesize\ttfamily void dessine\+Image (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{image,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Dessine une image en fonction des paramètres passés en paramètres. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em SDL\+\_\+\+Texture} & $\ast$image Une image \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & x Coordonnées en abscisses (coin en haut à gauche de l\textquotesingle{}image) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & y Coordonnées en ordonnée (coin en haut à gauche de l\textquotesingle{}image)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dessin_8c_aab41cf66613979032cf7d630d4bd8ab6}\label{dessin_8c_aab41cf66613979032cf7d630d4bd8ab6}} 
+\index{dessin.c@{dessin.c}!dessineTile@{dessineTile}}
+\index{dessineTile@{dessineTile}!dessin.c@{dessin.c}}
+\doxysubsubsection{\texorpdfstring{dessineTile()}{dessineTile()}}
+{\footnotesize\ttfamily void dessine\+Tile (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{image,  }\item[{int}]{destx,  }\item[{int}]{desty,  }\item[{int}]{srcx,  }\item[{int}]{srcy }\end{DoxyParamCaption})}
+
+
+
+charge une image dans un rectangle dont les coordonnées sont passées en paramètres 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em SDL\+\_\+\+Texture} & $\ast$image l\textquotesingle{}image à charger \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & destx coordonnées x de la destination \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & desty coordonnées y de la destination \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & srcx coordonnées x de la source \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & srcy coordonnées y de la source\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dessin_8c_a4743bbc7f02f675340a494482e6c8d53}\label{dessin_8c_a4743bbc7f02f675340a494482e6c8d53}} 
+\index{dessin.c@{dessin.c}!initHUD@{initHUD}}
+\index{initHUD@{initHUD}!dessin.c@{dessin.c}}
+\doxysubsubsection{\texorpdfstring{initHUD()}{initHUD()}}
+{\footnotesize\ttfamily void init\+HUD (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Charge les images pour les pièces et pour la vie. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dessin_8c_a46c3c5c517076bb1a9d915ecfed78373}\label{dessin_8c_a46c3c5c517076bb1a9d915ecfed78373}} 
+\index{dessin.c@{dessin.c}!nettoyageHUD@{nettoyageHUD}}
+\index{nettoyageHUD@{nettoyageHUD}!dessin.c@{dessin.c}}
+\doxysubsubsection{\texorpdfstring{nettoyageHUD()}{nettoyageHUD()}}
+{\footnotesize\ttfamily void nettoyage\+HUD (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Nettoie et libère proprement les textures. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}

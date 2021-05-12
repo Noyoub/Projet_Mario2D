@@ -1,0 +1,105 @@
+\hypertarget{init_8c}{}\doxysection{Référence du fichier init.\+c}
+\label{init_8c}\index{init.c@{init.c}}
+
+
+initialise tous les outils nécessaires aux fonctionnalités du jeu  
+
+
+{\ttfamily \#include \char`\"{}prototypes.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{init_8c_ad32a83e14240bcaeff478bb967261d72}{recup\+Rendu}} (void)
+\begin{DoxyCompactList}\small\item\em Récupère un rendu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{init_8c_ae9ce4316681f06f1ce691d9ba31c15db}{chargement\+Jeu}} ()
+\begin{DoxyCompactList}\small\item\em S\textquotesingle{}occupe de charger le jeu, c\textquotesingle{}est-\/à-\/dire la map et le sprite du personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{init_8c_a4625abbd174dfbdfec9f4cf9124217a8}{init}} (char $\ast$title)
+\begin{DoxyCompactList}\small\item\em Initialisation globale des outils SDL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{init_8c_a420ff1bac41290b5df2717a5c838a5aa}{nettoyage\+All}} ()
+\begin{DoxyCompactList}\small\item\em La fonction quitte tous les outils proprement en libérant la mémoire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{init_8c_ae04e09e4e3831bfc1632c509ae37dcec}\label{init_8c_ae04e09e4e3831bfc1632c509ae37dcec}} 
+SDL\+\_\+\+Window $\ast$ {\bfseries screen}
+\item 
+\mbox{\Hypertarget{init_8c_a966da7a60c4ea3ba301e26ccc5efe452}\label{init_8c_a966da7a60c4ea3ba301e26ccc5efe452}} 
+SDL\+\_\+\+Renderer $\ast$ {\bfseries renderer}
+\item 
+\mbox{\Hypertarget{init_8c_a085fa1a30b8ae09553a6bbf340dc8d59}\label{init_8c_a085fa1a30b8ae09553a6bbf340dc8d59}} 
+int {\bfseries hero}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+initialise tous les outils nécessaires aux fonctionnalités du jeu 
+
+\begin{DoxyVersion}{Version}
+1.\+7 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Lucas BOUILLON, Arthur SCHERRER, Lucas BEAUFRETON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{init_8c_ae9ce4316681f06f1ce691d9ba31c15db}\label{init_8c_ae9ce4316681f06f1ce691d9ba31c15db}} 
+\index{init.c@{init.c}!chargementJeu@{chargementJeu}}
+\index{chargementJeu@{chargementJeu}!init.c@{init.c}}
+\doxysubsubsection{\texorpdfstring{chargementJeu()}{chargementJeu()}}
+{\footnotesize\ttfamily void chargement\+Jeu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+S\textquotesingle{}occupe de charger le jeu, c\textquotesingle{}est-\/à-\/dire la map et le sprite du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{init_8c_a4625abbd174dfbdfec9f4cf9124217a8}\label{init_8c_a4625abbd174dfbdfec9f4cf9124217a8}} 
+\index{init.c@{init.c}!init@{init}}
+\index{init@{init}!init.c@{init.c}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{char $\ast$}]{title }\end{DoxyParamCaption})}
+
+
+
+Initialisation globale des outils SDL. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\texttt{ in}}  & {\em char} & $\ast$titre Nom de la fenêtre à générer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{init_8c_a420ff1bac41290b5df2717a5c838a5aa}\label{init_8c_a420ff1bac41290b5df2717a5c838a5aa}} 
+\index{init.c@{init.c}!nettoyageAll@{nettoyageAll}}
+\index{nettoyageAll@{nettoyageAll}!init.c@{init.c}}
+\doxysubsubsection{\texorpdfstring{nettoyageAll()}{nettoyageAll()}}
+{\footnotesize\ttfamily void nettoyage\+All (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+La fonction quitte tous les outils proprement en libérant la mémoire. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{init_8c_ad32a83e14240bcaeff478bb967261d72}\label{init_8c_ad32a83e14240bcaeff478bb967261d72}} 
+\index{init.c@{init.c}!recupRendu@{recupRendu}}
+\index{recupRendu@{recupRendu}!init.c@{init.c}}
+\doxysubsubsection{\texorpdfstring{recupRendu()}{recupRendu()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ recup\+Rendu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Récupère un rendu. 
+
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Renderer 
+\end{DoxyReturn}
